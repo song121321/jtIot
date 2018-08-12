@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg3" xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <song.honey.ui.CircleImageView
+    <song.jtslkj.ui.CircleImageView
         android:id="@+id/login_picture"
         android:layout_width="140dp"
         android:layout_height="140dp"

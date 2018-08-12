@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="song.shuang.honey"
+    package="com.jtslkj.jtiot"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="14" />
+        android:minSdkVersion="20"
+        android:targetSdkVersion="25" />
 
     <permission
         android:name="oem.permission.SENDMAIL"
@@ -27,7 +27,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="song.honey.activity.SplashActivity"
+            android:name="song.jtslkj.activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -37,137 +37,137 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="song.honey.activity.SplashBaseActivity"
+            android:name="song.jtslkj.activity.SplashBaseActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.LoginActivity"
+            android:name="song.jtslkj.activity.LoginActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.MainActivity"
+            android:name="song.jtslkj.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaBudgetActivity"
+            android:name="song.jtslkj.activity.BaijiaBudgetActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.LoginGestureGuidePasswordActivity"
+            android:name="song.jtslkj.activity.LoginGestureGuidePasswordActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.LoginGestureCreatePasswordActivity"
+            android:name="song.jtslkj.activity.LoginGestureCreatePasswordActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.LoginGestureUnlockPasswordActivity"
+            android:name="song.jtslkj.activity.LoginGestureUnlockPasswordActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaBudgetAddSingleActivity"
+            android:name="song.jtslkj.activity.BaijiaBudgetAddSingleActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaBudgetAddBatchActivity"
+            android:name="song.jtslkj.activity.BaijiaBudgetAddBatchActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaBudgetDetailActivity"
+            android:name="song.jtslkj.activity.BaijiaBudgetDetailActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaConsumeActivity"
+            android:name="song.jtslkj.activity.BaijiaConsumeActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.HejiaActivity"
+            android:name="song.jtslkj.activity.HejiaActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.WojiaSettingContentActivity"
+            android:name="song.jtslkj.activity.WojiaSettingContentActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.WojiaSettingActivity"
+            android:name="song.jtslkj.activity.WojiaSettingActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.WojiaZujiActivity"
+            android:name="song.jtslkj.activity.WojiaZujiActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.WojiaActivity"
+            android:name="song.jtslkj.activity.WojiaActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaConsumeAddActivity"
+            android:name="song.jtslkj.activity.BaijiaConsumeAddActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaConsumeSearchActivity"
+            android:name="song.jtslkj.activity.BaijiaConsumeSearchActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaConsumeSearchResultActivity"
+            android:name="song.jtslkj.activity.BaijiaConsumeSearchResultActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.BaijiaConsumeDetailActivity"
+            android:name="song.jtslkj.activity.BaijiaConsumeDetailActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.ChijiaWorkAddActivity"
+            android:name="song.jtslkj.activity.ChijiaWorkAddActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.ChijiaWorkDetailActivity"
+            android:name="song.jtslkj.activity.ChijiaWorkDetailActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.ChijiaWorkSettleActivity"
+            android:name="song.jtslkj.activity.ChijiaWorkSettleActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.ChijiaActivity"
+            android:name="song.jtslkj.activity.ChijiaActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.ChijiaIncomeAddActivity"
+            android:name="song.jtslkj.activity.ChijiaIncomeAddActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="song.honey.activity.ImageShowerActivity"
+            android:name="song.jtslkj.activity.ImageShowerActivity"
             android:theme="@style/ImageScale" >
         </activity>
 
         <service
-            android:name="song.honey.service.NotificationService"
+            android:name="song.jtslkj.service.NotificationService"
             android:permission="oem.permission.SENDMAIL" >
             <intent-filter>
                 <action android:name="XJK_SERVICE" />
@@ -176,7 +176,7 @@
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="song.shuang.honey.com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.jtslkj.jtiot.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 

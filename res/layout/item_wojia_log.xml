@@ -6,7 +6,7 @@
     android:background="@color/tv_White"
     android:padding="5dp" >
 
-    <song.honey.ui.CircleImageView
+    <song.jtslkj.ui.CircleImageView
         android:id="@+id/cv_item_log_wojia"
         android:layout_width="60dp"
         android:layout_height="60dp"

@@ -124,11 +124,11 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical" >
 
-            <song.honey.xlistview.XListView
+            <song.jtslkj.xlistview.XListView
                 android:id="@+id/xlv_search_consumelist"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" >
-            </song.honey.xlistview.XListView>
+            </song.jtslkj.xlistview.XListView>
         
     </RelativeLayout>
 </LinearLayout>

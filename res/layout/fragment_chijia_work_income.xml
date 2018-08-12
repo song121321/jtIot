@@ -113,11 +113,11 @@
         android:layout_below="@id/layout_bar"
         android:background="@color/bg_Gray_dark" />
 
-    <song.honey.xlistview.XListView
+    <song.jtslkj.xlistview.XListView
         android:id="@+id/xlv_chijia_work_income_listview"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/view" >
-    </song.honey.xlistview.XListView>
+    </song.jtslkj.xlistview.XListView>
 
 </RelativeLayout>
