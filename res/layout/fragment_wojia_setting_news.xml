@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/on"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_wojia_setting_news_switch"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/type_add"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_wojia_setting_news_add"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginRight="2dp"
+        android:background="#dadada" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/type_update"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_wojia_setting_news_update"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginRight="2dp"
+        android:background="#dadada" />
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/type_delete"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_wojia_setting_news_delete"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginRight="2dp"
+        android:background="#dadada" />
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/type_login"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_wojia_setting_news_login"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginRight="2dp"
+        android:background="#dadada" />
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/type_view"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_wojia_setting_news_view"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginRight="2dp"
+        android:background="#dadada" />
+</LinearLayout>

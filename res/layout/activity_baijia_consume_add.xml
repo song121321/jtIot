@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scr_consume_add"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/appbg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/topic_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/actionbar_usual" />
+
+        <EditText
+            android:id="@+id/et_baijia_add_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/baijia_add_name"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/et_baijia_add_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/baijia_add_money"
+            android:inputType="numberDecimal"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/et_baijia_add_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/baijia_add_beizhu"
+            android:inputType="textMultiLine"
+            android:minHeight="160.0dip"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_baijia_add_time"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_baijia_add_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/baijia_add_time"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_baijia_add_time_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/system_time"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_baijia_add_budget"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_baijia_add_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/baijia_add_budget"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_baijia_add_budget_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/baijia_add_budget_frute"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_baijia_add_person"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_baijia_add_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/baijia_add_person"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_baijia_add_person_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/baijia_add_person_public"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_baijia_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_baijia_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/baijia_add_addimg"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sb_baijia_add_image"
+                style="@style/SwitchButtonStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_baijia_add_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/avatar1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

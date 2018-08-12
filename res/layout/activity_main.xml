@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/home_radio_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/text_white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/home_tab_baijia"
+                style="@style/home_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/main_bottom_baijia_selector"
+                android:text="@string/main_tabtext_jijing"
+                android:textColor="@color/main_textcolor_select" />
+
+            <RadioButton
+                android:id="@+id/home_tab_chijia"
+                style="@style/home_tab_bottom"
+                android:drawableTop="@drawable/main_bottom_chijia_selector"
+                android:text="@string/main_tabtext_chijia"
+                android:textColor="@color/main_textcolor_normal" />
+
+            <RadioButton
+                android:id="@+id/home_tab_hejia"
+                style="@style/home_tab_bottom"
+                android:drawableTop="@drawable/main_bottom_hejia_selector"
+                android:text="@string/main_tabtext_hejia"
+                android:textColor="@color/main_textcolor_normal" />
+
+            <RadioButton
+                android:id="@+id/home_tab_wojia"
+                style="@style/home_tab_bottom"
+                android:drawableTop="@drawable/main_bottom_wojia_selector"
+                android:text="@string/main_tabtext_wojia"
+                android:textColor="@color/main_textcolor_normal" />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

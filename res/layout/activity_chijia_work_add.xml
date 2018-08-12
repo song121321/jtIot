@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/appbg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/topic_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/actionbar_usual" />
+
+        <RelativeLayout
+            android:id="@+id/rl_chijia_work_add_woritemname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_chijia_work_add_woritemname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/chijia_work_gongzuomingcheng"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_chijia_work_add_woritemname_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/chijia_work_gongzuomingcheng"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_chijia_work_add_singleprice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/chijia_work_singleprice"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+
+       <EditText
+            android:id="@+id/et_chijia_work_add_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/chijia_work_number"
+            android:inputType="numberDecimal"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+       
+       <EditText
+            android:id="@+id/et_chijia_work_add_changge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/chijia_work_changge"
+            android:inputType="numberDecimal"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+       
+        <TextView
+            android:id="@+id/tv_chijia_work_add_zhongjia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/chijia_work_zhongjia"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+        <EditText
+            android:id="@+id/et_chijia_work_add_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/edittext_bg_shape"
+            android:gravity="top"
+            android:hint="@string/baijia_add_beizhu"
+            android:inputType="textMultiLine"
+            android:minHeight="120.0dip"
+            android:padding="14.0dip"
+            android:textColor="@color/text_balck"
+            android:textColorHint="#ffcbcbcb"
+            android:textSize="16.0sp" />
+        <RelativeLayout
+            android:id="@+id/rl_chijia_work_add_worktime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_item_bg"
+           android:layout_marginTop="10dp"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_chijia_work_add_worktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/baijia_add_time"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_chijia_work_add_worktime_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/system_time"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_chijia_work_add_person"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_chijia_work_add_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/baijia_add_person"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_chijia_work_add_person_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:gravity="right"
+                
+                android:singleLine="true"
+                android:text="@string/baijia_add_person_public"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

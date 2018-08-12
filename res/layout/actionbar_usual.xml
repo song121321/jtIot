@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/actionbar_bg"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_actionbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/actionbar_header_btn_text"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+        <TextView
+            android:id="@+id/tv_actionbar_usual_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/system_cancel"
+            android:textColor="@color/text_white"
+            style="@style/item_text_1"
+            android:background="@drawable/actionbar_header_btn_text"
+            ></TextView>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_s"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_actionbar_usual_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/text_white"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <!-- 头部右边 -->
+
+    <LinearLayout
+        android:id="@+id/ll_actionbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:padding="7dp"
+        >
+        
+     <TextView
+            android:id="@+id/tv_actionbar_usual_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/system_sure"
+            android:textColor="@color/text_white"
+            style="@style/item_text_1"
+            android:background="@drawable/actionbar_header_btn_text"
+            ></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

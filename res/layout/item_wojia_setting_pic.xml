@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_item_wojia_setting_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/action_settings"
+        android:layout_marginLeft="19dp" />
+
+    <TextView
+        android:id="@+id/tv_item_wojia_setting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/iv_item_wojia_setting_pic" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb_item_wojia_setting_on"
+        style="@style/SwitchButtonStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="31dp" />
+
+</RelativeLayout>

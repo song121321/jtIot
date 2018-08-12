@@ -1,0 +1,39 @@
+<song.honey.ui.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_chijia"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/left_baijia"
+    android:orientation="vertical" >
+
+    <!-- 左侧菜单页面 -->
+
+    <include layout="@layout/activity_leftmenu" />
+
+    <song.honey.ui.MyRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/appbg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/actionbar_budget" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#dddddd" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <song.honey.xlistview.XListView
+                android:id="@+id/budgetlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </song.honey.xlistview.XListView>
+        </RelativeLayout>
+    </song.honey.ui.MyRelativeLayout>
+
+</song.honey.ui.DragLayout>

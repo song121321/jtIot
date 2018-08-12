@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_btn_text"
+    android:layout_margin="10dp" >
+
+    <TextView
+        android:id="@+id/tv_popwin_item_name"
+        style="@style/text_black_small"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:text="2222"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/iv_popwin_item_checkimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/section_selected"
+        android:visibility="visible" />
+
+</LinearLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="incometype_arr">
+        <item>全部</item>
+        <item>小金库</item>
+    </string-array>
+    <string-array name="time_arr">
+        <item>所有</item>
+        <item>本年度</item>
+    </string-array>
+    <string-array name="status_arr">
+        <item>全部</item>
+        <item>未结算</item>
+        <item>已结算</item>
+    </string-array>
+    <string-array name="person_arr">
+        <item>所有</item>
+        <item>公共</item>
+        <item>李松</item>
+        <item>侯双双</item>
+    </string-array>
+    <string-array name="person_arr1">
+        <item>所有</item>
+        <item>李松</item>
+        <item>侯双双</item>
+    </string-array>
+    <string-array name="setting_arr">
+        <item>通用</item>
+        <item>安全</item>
+        <item>常用预算设置</item>
+        <item>新消息提醒</item>
+        <item>清空与恢复</item>
+        <item>关于</item>
+    </string-array>
+
+</resources>

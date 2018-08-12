@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_main" />
+
+    <RelativeLayout
+        android:id="@+id/re_wojia_main_myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <song.honey.ui.CircleImageView
+            android:id="@+id/iv_wojia_main_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/avatar1"
+            app:border_color="@color/text_grey"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/iv_wojia_main_avatar"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_wojia_main_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_wojia_main_sex"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/item_consume_person_ls" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_wojia_main_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_wojia_main_avatar"
+            android:text="@string/wojia_main_account"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_wojia_main_friendsquan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:paddingLeft="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_friends"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/wojia_main_friendsquan" />
+
+        <TextView
+            android:id="@+id/tv_wojia_main_frendquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_friends"
+            android:text="@string/wojia_main_friendquan"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_wojia_main_qianbao"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:paddingLeft="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_money_bag"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/wojia_main_qianbao" />
+
+        <TextView
+            android:id="@+id/tv_wojia_main_qianbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_money_bag"
+            android:text="@string/wojia_main_qianbao"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_wojia_main_footprint"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:paddingLeft="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_footprint"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/wojia_main_footprint" />
+
+        <TextView
+            android:id="@+id/tv_wojia_main_footprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_footprint"
+            android:text="@string/wojia_main_footprint"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_wojia_main_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true"
+        android:paddingLeft="12dp" >
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/wojia_main_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_setting"
+            android:text="@string/wojia_main_setting"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

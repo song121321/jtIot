@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="appbg">#fff2f2f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="weixingreen">#45c01a</color>
+    <color name="main_textcolor_normal">#696969</color>
+    <color name="main_textcolor_select">#00db62</color>
+    <color name="text_pink">#FF9797</color>
+    <color name="text_press">#9d9c9c</color>
+    <color name="text_grey">#6C6C6C</color>
+    <color name="text_normal">#cdcdcd</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_red">#FF2222</color>
+    <color name="text_green">#01B468</color>
+    <color name="text_checked">#ff14a19c</color>
+    <color name="border_gray">#cccccc</color>
+    <color name="actionbar_bg">#5ce0d8</color>
+    <color name="main_navi_bg">#eeeeee</color>
+    <color name="text_balck">#000000</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="item_work_line">#ffe6e7e4</color>
+    <color name="tab_bg">#fffb4a91</color>
+    <!-- 白色 -->
+    <color name="bg_White">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="bg_Black">#000000</color>
+    <!-- 灰色 -->
+    <color name="bg_Gray">#CCCCCC</color>
+    <!-- 浅灰色 -->
+    <color name="bg_Gray_light">#EEEEEE</color>
+    <!-- 深灰色 -->
+    <color name="bg_Gray_dark">#777777</color>
+    <!-- 白色 -->
+    <color name="tv_White">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="tv_Black">#000000</color>
+    <!-- 红色 -->
+    <color name="tv_Red">#CC0000</color>
+    <!-- 灰色 -->
+    <color name="gesture_background">#ff303237</color>
+    <color name="lightgreen">#aeff39</color>
+    <color name="peachpuff">#FFDAB9</color>
+    <color name="tomato">#FF6347</color>
+     <color name="azure">#F0FFFF</color>
+     <color name="violet">#EE82EE</color>
+</resources>

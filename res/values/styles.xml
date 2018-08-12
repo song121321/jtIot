@@ -1,0 +1,195 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="home_tab_bottom">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_margin">1dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/text_white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="text_black">
+        <item name="android:textColor">@color/main_textcolor_normal</item>
+    </style>
+
+    <style name="text_black_small" parent="@style/text_black">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="item_text_0" parent="@style/text_black">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="item_text_1" parent="@style/text_black">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="item_text_2" parent="@style/text_black">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="item_text_3" parent="@style/text_black">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="LoginGestureButtonGreen" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/logingesture_skin_color_button</item>
+        <item name="android:background">@drawable/logingesture_common_btn_green</item>
+    </style>
+
+    <style name="LoginGestureButtonRed" parent="@android:style/Widget.Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@drawable/logingesture_skin_color_button</item>
+        <item name="android:background">@drawable/logingesture_common_btn_red</item>
+    </style>
+
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_16_666666">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="text_green_yuanjiao">
+        <item name="android:textColor">@color/text_green</item>
+        <item name="android:background">@drawable/tv_green_stroke</item>
+    </style>
+
+    <style name="text_azure_yuanjiao">
+        <item name="android:textColor">@color/btn_blue_normal</item>
+        <item name="android:background">@drawable/tv_azure_stroke</item>
+    </style>
+
+    <style name="text_peachpuff_yuanjiao">
+        <item name="android:textColor">@color/peachpuff</item>
+        <item name="android:background">@drawable/tv_peachpuff_stroke</item>
+    </style>
+
+    <style name="text_tomato_yuanjiao">
+        <item name="android:textColor">@color/tomato</item>
+        <item name="android:background">@drawable/tv_tomatoo_stroke</item>
+    </style>
+
+    <style name="text_violet_yuanjiao">
+        <item name="android:textColor">@color/violet</item>
+        <item name="android:background">@drawable/tv_violet_stroke</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="ImageloadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+ <style name="AnimHead" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/head_in</item>
+        <item name="android:windowExitAnimation">@anim/head_out</item>
+    </style>
+    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimHead</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+</resources>
