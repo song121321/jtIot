@@ -123,7 +123,6 @@ public class BaijiaBudgetActivity extends BaseActivity implements
 			@Override
 			public void onItemSelected(AdapterView<?> arg0, View arg1,
 					int arg2, long arg3) {
-
 				timestr = ToolBox.generatemonthlist("2014-09-09").get(arg2);
 				refresh();
 			}
