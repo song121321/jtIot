@@ -32,32 +32,32 @@
             android:orientation="horizontal" >
 
             <RadioButton
-                android:id="@+id/home_tab_baijia"
+                android:id="@+id/home_tab_home"
                 style="@style/home_tab_bottom"
                 android:checked="true"
-                android:drawableTop="@drawable/main_bottom_baijia_selector"
-                android:text="@string/main_tabtext_jijing"
+                android:drawableTop="@drawable/main_bottom_home_selector"
+                android:text="@string/home"
                 android:textColor="@color/main_textcolor_select" />
 
             <RadioButton
-                android:id="@+id/home_tab_chijia"
+                android:id="@+id/home_tab_gis"
                 style="@style/home_tab_bottom"
-                android:drawableTop="@drawable/main_bottom_chijia_selector"
-                android:text="@string/main_tabtext_chijia"
+                android:drawableTop="@drawable/main_bottom_gis_selector"
+                android:text="@string/gis"
                 android:textColor="@color/main_textcolor_normal" />
 
             <RadioButton
-                android:id="@+id/home_tab_hejia"
+                android:id="@+id/home_tab_facility"
                 style="@style/home_tab_bottom"
-                android:drawableTop="@drawable/main_bottom_hejia_selector"
-                android:text="@string/main_tabtext_hejia"
+                android:drawableTop="@drawable/main_bottom_facility_selector"
+                android:text="@string/facility"
                 android:textColor="@color/main_textcolor_normal" />
 
             <RadioButton
-                android:id="@+id/home_tab_wojia"
+                android:id="@+id/home_tab_i"
                 style="@style/home_tab_bottom"
-                android:drawableTop="@drawable/main_bottom_wojia_selector"
-                android:text="@string/main_tabtext_wojia"
+                android:drawableTop="@drawable/main_bottom_i_selector"
+                android:text="@string/i"
                 android:textColor="@color/main_textcolor_normal" />
         </RadioGroup>
     </LinearLayout>

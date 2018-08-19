@@ -78,8 +78,9 @@ public class LoginActivity extends BaseActivity {
 			String nameSpace = MyConfig.nameSpace;
 			String methodName = MyConfig.methodName_Login;
 			String endPoint = MyConfig.endPoint;
-			return WebServiceUtil.getAnyType(nameSpace, methodName, endPoint,
-					params);
+//			return WebServiceUtil.getAnyType(nameSpace, methodName, endPoint,
+//					params);
+			return "true";
 		}
 
 		@Override

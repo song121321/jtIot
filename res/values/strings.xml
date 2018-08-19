@@ -10,6 +10,10 @@
     <string name="admin">admin</string>
     <string name="Hss">Hss</string>
     <string name="Admin">Admin</string>
+    <string name="home">主页</string>
+    <string name="gis">Gis</string>
+    <string name="facility">设备</string>
+    <string name="i">我的</string>
     <string name="houshuangshuang">侯双双</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

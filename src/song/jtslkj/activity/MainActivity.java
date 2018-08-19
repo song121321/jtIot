@@ -30,7 +30,7 @@ import android.widget.TabHost;
 public class MainActivity extends TabActivity {
 	private TabHost mTabHost;
 	private RadioGroup mTabButtonGroup;
-	public static final String TAB_BAIJIA = "baijia";
+	public static final String TAB_HOME = "baijia";
 	public static final String TAB_CHIJIA = "chijia";
 	public static final String TAB_HEJIA = "hejia";
 	public static final String TAB_WOJIA = "wojia";
@@ -78,10 +78,10 @@ public class MainActivity extends TabActivity {
 
 	private void findViewById() {
 		mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
-		rButton1 = (RadioButton) findViewById(R.id.home_tab_baijia);
-		rButton2 = (RadioButton) findViewById(R.id.home_tab_chijia);
-		rButton3 = (RadioButton) findViewById(R.id.home_tab_hejia);
-		rButton4 = (RadioButton) findViewById(R.id.home_tab_wojia);
+		rButton1 = (RadioButton) findViewById(R.id.home_tab_home);
+		rButton2 = (RadioButton) findViewById(R.id.home_tab_gis);
+		rButton3 = (RadioButton) findViewById(R.id.home_tab_facility);
+		rButton4 = (RadioButton) findViewById(R.id.home_tab_i);
 	}
 
 	private void initView() {
@@ -93,8 +93,8 @@ public class MainActivity extends TabActivity {
 		Intent i_hejia = new Intent(this, HejiaActivity.class);
 		Intent i_wojia = new Intent(this, WojiaActivity.class);
 
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_BAIJIA)
-				.setIndicator(TAB_BAIJIA).setContent(i_baijia));
+		mTabHost.addTab(mTabHost.newTabSpec(TAB_HOME)
+				.setIndicator(TAB_HOME).setContent(i_baijia));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_CHIJIA)
 				.setIndicator(TAB_CHIJIA).setContent(i_chijia));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_HEJIA).setIndicator(TAB_HEJIA)
@@ -105,20 +105,20 @@ public class MainActivity extends TabActivity {
 				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 					public void onCheckedChanged(RadioGroup group, int checkedId) {
 						switch (checkedId) {
-						case R.id.home_tab_baijia:
-							mTabHost.setCurrentTabByTag(TAB_BAIJIA);
+						case R.id.home_tab_home:
+							mTabHost.setCurrentTabByTag(TAB_HOME);
 							changeTextColor(1);
 							break;
-						case R.id.home_tab_chijia:
+						case R.id.home_tab_gis:
 							mTabHost.setCurrentTabByTag(TAB_CHIJIA);
 							changeTextColor(2);
 							break;
-						case R.id.home_tab_hejia:
+						case R.id.home_tab_facility:
 							mTabHost.setCurrentTabByTag(TAB_HEJIA);
 							changeTextColor(3);
 							break;
 
-						case R.id.home_tab_wojia:
+						case R.id.home_tab_i:
 							mTabHost.setCurrentTabByTag(TAB_WOJIA);
 							changeTextColor(4);
 							break;

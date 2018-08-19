@@ -5,7 +5,7 @@
     <color name="transparent">#00000000</color>
     <color name="weixingreen">#45c01a</color>
     <color name="main_textcolor_normal">#696969</color>
-    <color name="main_textcolor_select">#00db62</color>
+    <color name="main_textcolor_select">#2344Fb</color>
     <color name="text_pink">#FF9797</color>
     <color name="text_press">#9d9c9c</color>
     <color name="text_grey">#6C6C6C</color>
@@ -15,7 +15,7 @@
     <color name="text_green">#01B468</color>
     <color name="text_checked">#ff14a19c</color>
     <color name="border_gray">#cccccc</color>
-    <color name="actionbar_bg">#5ce0d8</color>
+    <color name="actionbar_bg">#2344Fb</color>
     <color name="main_navi_bg">#eeeeee</color>
     <color name="text_balck">#000000</color>
     <color name="btn_blue_normal">#1e90ff</color>
