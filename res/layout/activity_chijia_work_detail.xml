@@ -83,7 +83,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentRight="true" >
 
-                        <song.honey.ui.CircleImageView
+                        <song.jtslkj.ui.CircleImageView
                             android:id="@+id/civ_fragment_chijia_work_detail_person"
                             android:layout_width="120dp"
                             android:layout_height="120dp"

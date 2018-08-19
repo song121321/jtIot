@@ -1,4 +1,4 @@
-#Sun Aug 05 16:10:06 CST 2018
-base.0=E\:\\AndroidStudioProjects\\LoveHoney\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Sun Aug 12 16:02:03 CST 2018
+base.0=E\:\\AndroidStudioProjects\\jtIot\\build\\intermediates\\transforms\\dexMerger\\debug\\22
 path.0=classes.dex
 renamed.0=classes.dex

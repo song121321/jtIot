@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Sun Aug 12 14:49:45 CST 2018
+#Sun Aug 12 16:04:41 CST 2018
 0.baseType=DIRECTORY
-0.base=E\:\\AndroidStudioProjects\\jtIot\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.base=E\:\\AndroidStudioProjects\\jtIot\\build\\intermediates\\transforms\\dexMerger\\debug\\34
 0.path=classes.dex
 0.set=DEX
 count=1

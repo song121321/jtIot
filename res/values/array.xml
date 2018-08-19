@@ -3,7 +3,7 @@
 
     <string-array name="incometype_arr">
         <item>全部</item>
-        <item>小金库</item>
+        <item>金田物联</item>
     </string-array>
     <string-array name="time_arr">
         <item>所有</item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">掌上元大</string>
+    <string name="app_name">金田物联</string>
     <string name="lisong">李松</string>
     <string name="niming">匿名</string>
     <string name="on">开启</string>
@@ -23,7 +23,7 @@
     <string name="system_save">保存</string>
     <string name="system_edit">编辑</string>
     <string name="system_default">默认</string>
-    <string name="system_sureifexit">是否确定要退出小金库</string>
+    <string name="system_sureifexit">是否确定要退出金田物联</string>
     <string name="system_exit">退出</string>
     <string name="system_about">关于</string>
     <string name="system_time">时间</string>

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package song.shuang.honey;
+package com.jtslkj;
 
 public final class R {
     public static final class anim {
@@ -1068,8 +1068,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CircleImageView_border_color song.shuang.honey:border_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #CircleImageView_border_width song.shuang.honey:border_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_color com.jtslkj:border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_width com.jtslkj:border_width}</code></td><td></td></tr>
            </table>
            @see #CircleImageView_border_color
            @see #CircleImageView_border_width
@@ -1078,7 +1078,7 @@ containing a value of this type.
             0x7f01000b, 0x7f01000c
         };
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#border_color}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#border_color}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -1089,11 +1089,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:border_color
+          @attr name com.jtslkj:border_color
         */
         public static final int CircleImageView_border_color = 1;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#border_width}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#border_width}
           attribute's value can be found in the {@link #CircleImageView} array.
 
 
@@ -1105,7 +1105,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:border_width
+          @attr name com.jtslkj:border_width
         */
         public static final int CircleImageView_border_width = 0;
         /** Attributes that can be used with a LoginGesturePatternView.
@@ -1114,16 +1114,16 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_arrowGreenUp song.shuang.honey:arrowGreenUp}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_arrowRedUp song.shuang.honey:arrowRedUp}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_aspect song.shuang.honey:aspect}</code></td><td>
+           <tr><td><code>{@link #LoginGesturePatternView_arrowGreenUp com.jtslkj:arrowGreenUp}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_arrowRedUp com.jtslkj:arrowRedUp}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_aspect com.jtslkj:aspect}</code></td><td>
              Aspect to use when drawing LockPatternView.</td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_btnNormal song.shuang.honey:btnNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_btnTouched song.shuang.honey:btnTouched}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_circleGreen song.shuang.honey:circleGreen}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_circleNormal song.shuang.honey:circleNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_circleRed song.shuang.honey:circleRed}</code></td><td></td></tr>
-           <tr><td><code>{@link #LoginGesturePatternView_line song.shuang.honey:line}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_btnNormal com.jtslkj:btnNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_btnTouched com.jtslkj:btnTouched}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_circleGreen com.jtslkj:circleGreen}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_circleNormal com.jtslkj:circleNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_circleRed com.jtslkj:circleRed}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoginGesturePatternView_line com.jtslkj:line}</code></td><td></td></tr>
            </table>
            @see #LoginGesturePatternView_arrowGreenUp
            @see #LoginGesturePatternView_arrowRedUp
@@ -1141,23 +1141,23 @@ containing a value of this type.
             0x7f010015
         };
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#arrowGreenUp}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#arrowGreenUp}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:arrowGreenUp
+          @attr name com.jtslkj:arrowGreenUp
         */
         public static final int LoginGesturePatternView_arrowGreenUp = 7;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#arrowRedUp}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#arrowRedUp}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:arrowRedUp
+          @attr name com.jtslkj:arrowRedUp
         */
         public static final int LoginGesturePatternView_arrowRedUp = 8;
         /**
@@ -1182,61 +1182,61 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>lockHeight</code></td><td>2</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name song.shuang.honey:aspect
+          @attr name com.jtslkj:aspect
         */
         public static final int LoginGesturePatternView_aspect = 0;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#btnNormal}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#btnNormal}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:btnNormal
+          @attr name com.jtslkj:btnNormal
         */
         public static final int LoginGesturePatternView_btnNormal = 2;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#btnTouched}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#btnTouched}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:btnTouched
+          @attr name com.jtslkj:btnTouched
         */
         public static final int LoginGesturePatternView_btnTouched = 3;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#circleGreen}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#circleGreen}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:circleGreen
+          @attr name com.jtslkj:circleGreen
         */
         public static final int LoginGesturePatternView_circleGreen = 5;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#circleNormal}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#circleNormal}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:circleNormal
+          @attr name com.jtslkj:circleNormal
         */
         public static final int LoginGesturePatternView_circleNormal = 4;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#circleRed}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#circleRed}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:circleRed
+          @attr name com.jtslkj:circleRed
         */
         public static final int LoginGesturePatternView_circleRed = 6;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#line}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#line}
           attribute's value can be found in the {@link #LoginGesturePatternView} array.
 
 
@@ -1247,7 +1247,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:line
+          @attr name com.jtslkj:line
         */
         public static final int LoginGesturePatternView_line = 1;
         /** Attributes that can be used with a PagerSlidingTabStrip.
@@ -1256,17 +1256,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerColor song.shuang.honey:pstsDividerColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerPadding song.shuang.honey:pstsDividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorColor song.shuang.honey:pstsIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorHeight song.shuang.honey:pstsIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsScrollOffset song.shuang.honey:pstsScrollOffset}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsShouldExpand song.shuang.honey:pstsShouldExpand}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabBackground song.shuang.honey:pstsTabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabPaddingLeftRight song.shuang.honey:pstsTabPaddingLeftRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAllCaps song.shuang.honey:pstsTextAllCaps}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineColor song.shuang.honey:pstsUnderlineColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineHeight song.shuang.honey:pstsUnderlineHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerColor com.jtslkj:pstsDividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerPadding com.jtslkj:pstsDividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorColor com.jtslkj:pstsIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorHeight com.jtslkj:pstsIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsScrollOffset com.jtslkj:pstsScrollOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsShouldExpand com.jtslkj:pstsShouldExpand}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabBackground com.jtslkj:pstsTabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabPaddingLeftRight com.jtslkj:pstsTabPaddingLeftRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAllCaps com.jtslkj:pstsTextAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineColor com.jtslkj:pstsUnderlineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineHeight com.jtslkj:pstsUnderlineHeight}</code></td><td></td></tr>
            </table>
            @see #PagerSlidingTabStrip_pstsDividerColor
            @see #PagerSlidingTabStrip_pstsDividerPadding
@@ -1286,7 +1286,7 @@ containing a value of this type.
             0x7f010008, 0x7f010009, 0x7f01000a
         };
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsDividerColor}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsDividerColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1297,11 +1297,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsDividerColor
+          @attr name com.jtslkj:pstsDividerColor
         */
         public static final int PagerSlidingTabStrip_pstsDividerColor = 2;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsDividerPadding}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsDividerPadding}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1313,11 +1313,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsDividerPadding
+          @attr name com.jtslkj:pstsDividerPadding
         */
         public static final int PagerSlidingTabStrip_pstsDividerPadding = 5;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsIndicatorColor}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsIndicatorColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1328,11 +1328,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsIndicatorColor
+          @attr name com.jtslkj:pstsIndicatorColor
         */
         public static final int PagerSlidingTabStrip_pstsIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsIndicatorHeight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1344,11 +1344,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsIndicatorHeight
+          @attr name com.jtslkj:pstsIndicatorHeight
         */
         public static final int PagerSlidingTabStrip_pstsIndicatorHeight = 3;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsScrollOffset}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsScrollOffset}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1360,11 +1360,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsScrollOffset
+          @attr name com.jtslkj:pstsScrollOffset
         */
         public static final int PagerSlidingTabStrip_pstsScrollOffset = 7;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsShouldExpand}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsShouldExpand}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1374,21 +1374,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsShouldExpand
+          @attr name com.jtslkj:pstsShouldExpand
         */
         public static final int PagerSlidingTabStrip_pstsShouldExpand = 9;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsTabBackground}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsTabBackground}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name song.shuang.honey:pstsTabBackground
+          @attr name com.jtslkj:pstsTabBackground
         */
         public static final int PagerSlidingTabStrip_pstsTabBackground = 8;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsTabPaddingLeftRight}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsTabPaddingLeftRight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1400,11 +1400,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsTabPaddingLeftRight
+          @attr name com.jtslkj:pstsTabPaddingLeftRight
         */
         public static final int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 6;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsTextAllCaps}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsTextAllCaps}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1414,11 +1414,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsTextAllCaps
+          @attr name com.jtslkj:pstsTextAllCaps
         */
         public static final int PagerSlidingTabStrip_pstsTextAllCaps = 10;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsUnderlineColor}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsUnderlineColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1429,11 +1429,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsUnderlineColor
+          @attr name com.jtslkj:pstsUnderlineColor
         */
         public static final int PagerSlidingTabStrip_pstsUnderlineColor = 1;
         /**
-          <p>This symbol is the offset where the {@link song.shuang.honey.R.attr#pstsUnderlineHeight}
+          <p>This symbol is the offset where the {@link com.jtslkj.R.attr#pstsUnderlineHeight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -1445,7 +1445,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name song.shuang.honey:pstsUnderlineHeight
+          @attr name com.jtslkj:pstsUnderlineHeight
         */
         public static final int PagerSlidingTabStrip_pstsUnderlineHeight = 4;
     };

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package song.shuang.honey;
+package com.jtslkj;
 
 public final class Manifest {
   public static final class permission {

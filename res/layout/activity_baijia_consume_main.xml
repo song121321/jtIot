@@ -1,4 +1,4 @@
-<song.honey.ui.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<song.jtslkj.ui.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dl_baijia_consume"
     android:layout_width="fill_parent"
@@ -10,7 +10,7 @@
 
     <include layout="@layout/activity_leftmenu" />
 
-    <song.honey.ui.MyRelativeLayout
+    <song.jtslkj.ui.MyRelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/appbg"
@@ -141,13 +141,13 @@
             android:background="@color/text_white"
             android:gravity="center_vertical" >
 
-            <song.honey.xlistview.XListView
+            <song.jtslkj.xlistview.XListView
                 android:id="@+id/consumelist"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:divider="@color/text_white"   >
-            </song.honey.xlistview.XListView>
+            </song.jtslkj.xlistview.XListView>
         </RelativeLayout>
-    </song.honey.ui.MyRelativeLayout>
+    </song.jtslkj.ui.MyRelativeLayout>
 
-</song.honey.ui.DragLayout>
+</song.jtslkj.ui.DragLayout>

@@ -6,7 +6,7 @@
 
     <include layout="@layout/actionbar_lefttitle" />
 
-    <song.honey.ui.PagerSlidingTabStrip
+    <song.jtslkj.ui.PagerSlidingTabStrip
         android:id="@+id/tabs_wojia_log"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
