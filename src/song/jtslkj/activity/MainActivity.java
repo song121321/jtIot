@@ -88,9 +88,9 @@ public class MainActivity extends TabActivity {
 
 		mTabHost = getTabHost();
 
-		Intent i_baijia = new Intent(this, BaijiaConsumeActivity.class);
+		Intent i_baijia = new Intent(this, HomeActivity.class);
 		Intent i_chijia = new Intent(this, ChijiaActivity.class);
-		Intent i_hejia = new Intent(this, HejiaActivity.class);
+		Intent i_hejia = new Intent(this, HomeActivity.class);
 		Intent i_wojia = new Intent(this, WojiaActivity.class);
 
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_HOME)
