@@ -4,13 +4,15 @@ public class MyConfig {
 	public static String Bmob_APPID = "e9bbe5f23a1aa1d60d525871e1d7db99";// bmob
 																			// sdk��APPID
 	public static String appname = "金田物联v2.0";
-	public static String ServerAddress = "http://xjk.gearhostpreview.com/";
+	public static String ServerAddress = "http://ydinfo.gearhostpreview.com/";
+	public static String picServer = "http://wlw.jtslkj.cn:8021";
 
 	public static final String nameSpace = "http://tempuri.org/";
-	public static final String endPoint = ServerAddress + "/WebService.asmx";
+	public static final String endPoint = ServerAddress + "/MockerService.asmx";
 	// public static final String endPoint =
 	// "http://192.168.95.1/WebService.asmx";
 	public static final String methodName_Login = "login";
+	public static final String methodName_GetIntroduction = "getIntroduction";
 	public static final String methodName_GetBudget = "getbudget";
 	public static final String methodName_GetBudgetInfo = "getBudgetInfo ";
 	public static final String methodName_GetConsume = "getconsume";
