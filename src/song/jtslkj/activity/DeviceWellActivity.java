@@ -217,11 +217,6 @@ public class DeviceWellActivity extends BaseActivity implements
             String nameSpace = MyConfig.nameSpace;
             String methodName = MyConfig.methodName_GetVillages;
             String endPoint = MyConfig.endPoint;
-//            villageOptions = new ArrayList<>();
-//            villageOptions.add("所有");
-//            villageOptions.add("闫楼村");
-//            villageOptions.add("范庄村");
-//            return villageOptions;
 			return WebServiceUtil.getArrayOfAnyType(nameSpace, methodName,
 					endPoint, params);
         }
