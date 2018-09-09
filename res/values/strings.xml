@@ -189,4 +189,6 @@
     <string name="device_main_irrigation_log">灌溉记录</string>
     <string name="device_main_sta">数据统计</string>
 
+    <string name="device_well_detail_attr">机井信息</string>
+
 </resources>

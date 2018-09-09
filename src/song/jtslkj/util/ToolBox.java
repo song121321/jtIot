@@ -17,6 +17,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
+import song.jtslkj.bean.WellAttrBean;
+
 @SuppressLint("SimpleDateFormat")
 public class ToolBox {
     private Context context;
@@ -24,6 +26,10 @@ public class ToolBox {
     public ToolBox(Context context) {
         super();
         this.context = context;
+    }
+
+    public static String getMapStr(WellAttrBean wab){
+        return wab.getName()+":"+wab.getValue();
     }
 
     /**

@@ -331,12 +331,12 @@ public class DeviceWellActivity extends BaseActivity implements
     @Override
     public void onItemClick(AdapterView<?> parent, View arg1, int position,
                             long arg3) {
-        if (R.id.consumelist == parent.getId()) {
+        if (R.id.xl_device_well_list == parent.getId()) {
             Intent intent = new Intent();
             intent.setClass(DeviceWellActivity.this,
-                    BaijiaConsumeDetailActivity.class);
+                    DeviceWellDetailActivity.class);
             Bundle bundle = new Bundle();
-            bundle.putSerializable("cb", wellBeans.get(position - 1));
+            bundle.putSerializable("wellBean", wellBeans.get(position - 1));
             intent.putExtras(bundle);
             this.startActivity(intent);
             return;

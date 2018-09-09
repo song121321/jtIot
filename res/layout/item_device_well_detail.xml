@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/tv_item_device_well_detail_name"
+        style="@style/item_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="电量" />
+
+    <TextView
+        android:id="@+id/tv_item_device_well_detail_mh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_item_device_well_detail_name"
+        android:layout_toEndOf="@+id/tv_item_device_well_detail_name"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/tv_item_device_well_detail_value"
+        style="@style/item_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_item_device_well_detail_mh"
+        android:layout_alignTop="@+id/tv_item_device_well_detail_name"
+        android:layout_marginStart="5dp"
+        android:text="23.87" />
+</RelativeLayout>
