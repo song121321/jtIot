@@ -14,6 +14,8 @@
     <string name="gis">Gis</string>
     <string name="facility">设备</string>
     <string name="i">我的</string>
+    <string name="all">所有</string>
+    <string name="sort">排序</string>
     <string name="houshuangshuang">侯双双</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -177,5 +179,14 @@
     <string name="wojia_main_zuji_login">登陆</string>
     <string name="wojia_main_zuji_delete">删除</string>
     <string name="wojia_main_zuji_update">修改</string>
+
+    <!-- Device -->
+    <string name="device">设备</string>
+    <string name="device_main_well">机井</string>
+    <string name="device_main_pump">泵站</string>
+    <string name="device_main_fertilizer">水肥机</string>
+    <string name="device_main_valve">电磁阀</string>
+    <string name="device_main_irrigation_log">灌溉记录</string>
+    <string name="device_main_sta">数据统计</string>
 
 </resources>

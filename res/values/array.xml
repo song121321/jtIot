@@ -34,4 +34,17 @@
         <item>关于</item>
     </string-array>
 
+    <string-array name="status_options">
+        <item>状态</item>
+        <item>开机</item>
+        <item>关机</item>
+        <item>异常</item>
+    </string-array>
+    <string-array name="sort_options">
+        <item>排序</item>
+        <item>开机优先</item>
+        <item>异常优先</item>
+        <item>关机优先</item>
+    </string-array>
+
 </resources>

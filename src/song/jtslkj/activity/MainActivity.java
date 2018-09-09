@@ -1,7 +1,5 @@
 package song.jtslkj.activity;
 
-import java.util.Date;
-
 import com.kyleduo.switchbutton.SwitchButton;
 
 import song.jtslkj.app.MyApplication;
@@ -22,7 +20,6 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 
@@ -30,12 +27,12 @@ import android.widget.TabHost;
 public class MainActivity extends TabActivity {
 	private TabHost mTabHost;
 	private RadioGroup mTabButtonGroup;
-	public static final String TAB_HOME = "baijia";
-	public static final String TAB_CHIJIA = "chijia";
-	public static final String TAB_HEJIA = "hejia";
-	public static final String TAB_WOJIA = "wojia";
+	public static final String TAB_HOME = "home";
+	public static final String TAB_GIS = "gis";
+	public static final String TAB_DEVICE = "device";
+	public static final String TAB_PERSON = "person";
 	public static final String ACTION_TAB = "tabaction";
-	private RadioButton rButton1, rButton2, rButton3, rButton4;
+	private RadioButton rButtonHome, rButtonGis, rButtonFacility, rButtonI;
 	public static boolean isForeground = false;
 	AccountSharedPreferenceHelper asph;
 	SwitchButton sb_on;
@@ -78,28 +75,28 @@ public class MainActivity extends TabActivity {
 
 	private void findViewById() {
 		mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
-		rButton1 = (RadioButton) findViewById(R.id.home_tab_home);
-		rButton2 = (RadioButton) findViewById(R.id.home_tab_gis);
-		rButton3 = (RadioButton) findViewById(R.id.home_tab_facility);
-		rButton4 = (RadioButton) findViewById(R.id.home_tab_i);
+		rButtonHome = (RadioButton) findViewById(R.id.home_tab_home);
+		rButtonGis = (RadioButton) findViewById(R.id.home_tab_gis);
+		rButtonFacility = (RadioButton) findViewById(R.id.home_tab_facility);
+		rButtonI = (RadioButton) findViewById(R.id.home_tab_i);
 	}
 
 	private void initView() {
 
 		mTabHost = getTabHost();
 
-		Intent i_baijia = new Intent(this, HomeActivity.class);
+		Intent iHome = new Intent(this, HomeActivity.class);
 		Intent i_chijia = new Intent(this, ChijiaActivity.class);
-		Intent i_hejia = new Intent(this, HomeActivity.class);
+		Intent iDevice = new Intent(this, DeviceActivity.class);
 		Intent i_wojia = new Intent(this, WojiaActivity.class);
 
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_HOME)
-				.setIndicator(TAB_HOME).setContent(i_baijia));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_CHIJIA)
-				.setIndicator(TAB_CHIJIA).setContent(i_chijia));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_HEJIA).setIndicator(TAB_HEJIA)
-				.setContent(i_hejia));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_WOJIA).setIndicator(TAB_WOJIA)
+				.setIndicator(TAB_HOME).setContent(iHome));
+		mTabHost.addTab(mTabHost.newTabSpec(TAB_GIS)
+				.setIndicator(TAB_GIS).setContent(i_chijia));
+		mTabHost.addTab(mTabHost.newTabSpec(TAB_DEVICE).setIndicator(TAB_DEVICE)
+				.setContent(iDevice));
+		mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSON).setIndicator(TAB_PERSON)
 				.setContent(i_wojia));
 		mTabButtonGroup
 				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -110,16 +107,16 @@ public class MainActivity extends TabActivity {
 							changeTextColor(1);
 							break;
 						case R.id.home_tab_gis:
-							mTabHost.setCurrentTabByTag(TAB_CHIJIA);
+							mTabHost.setCurrentTabByTag(TAB_GIS);
 							changeTextColor(2);
 							break;
 						case R.id.home_tab_facility:
-							mTabHost.setCurrentTabByTag(TAB_HEJIA);
+							mTabHost.setCurrentTabByTag(TAB_DEVICE);
 							changeTextColor(3);
 							break;
 
 						case R.id.home_tab_i:
-							mTabHost.setCurrentTabByTag(TAB_WOJIA);
+							mTabHost.setCurrentTabByTag(TAB_PERSON);
 							changeTextColor(4);
 							break;
 						default:
@@ -132,44 +129,44 @@ public class MainActivity extends TabActivity {
 	private void changeTextColor(int index) {
 		switch (index) {
 		case 1:
-			rButton1.setTextColor(getResources().getColor(
+			rButtonHome.setTextColor(getResources().getColor(
 					R.color.main_textcolor_select));
-			rButton2.setTextColor(getResources().getColor(
+			rButtonGis.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton3.setTextColor(getResources().getColor(
+			rButtonFacility.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton4.setTextColor(getResources().getColor(
+			rButtonI.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			break;
 		case 2:
-			rButton1.setTextColor(getResources().getColor(
+			rButtonHome.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton2.setTextColor(getResources().getColor(
+			rButtonGis.setTextColor(getResources().getColor(
 					R.color.main_textcolor_select));
-			rButton3.setTextColor(getResources().getColor(
+			rButtonFacility.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton4.setTextColor(getResources().getColor(
+			rButtonI.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			break;
 		case 3:
-			rButton1.setTextColor(getResources().getColor(
+			rButtonHome.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton2.setTextColor(getResources().getColor(
+			rButtonGis.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton3.setTextColor(getResources().getColor(
+			rButtonFacility.setTextColor(getResources().getColor(
 					R.color.main_textcolor_select));
-			rButton4.setTextColor(getResources().getColor(
+			rButtonI.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			break;
 
 		case 4:
-			rButton1.setTextColor(getResources().getColor(
+			rButtonHome.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton2.setTextColor(getResources().getColor(
+			rButtonGis.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton3.setTextColor(getResources().getColor(
+			rButtonFacility.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
-			rButton4.setTextColor(getResources().getColor(
+			rButtonI.setTextColor(getResources().getColor(
 					R.color.main_textcolor_select));
 			break;
 

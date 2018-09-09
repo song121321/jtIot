@@ -458,7 +458,7 @@ public class BaijiaConsumeActivity extends BaseActivity implements
 			HashMap<String, String> params = new HashMap<String, String>();
 			params.put("time", month);
 			String nameSpace = MyConfig.nameSpace;
-			String methodName = MyConfig.methodName_GetBudget;
+			String methodName = MyConfig.methodName_GetIntroduction;
 			String endPoint = MyConfig.endPoint;
 			return WebServiceUtil.getArrayOfAnyType(nameSpace, methodName,
 					endPoint, params);

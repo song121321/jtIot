@@ -163,7 +163,11 @@
             android:name="song.jtslkj.activity.ImageShowerActivity"
             android:theme="@style/ImageScale" >
         </activity>
-
+        <activity android:name="song.jtslkj.activity.DeviceActivity" />
+        <activity android:name="song.jtslkj.activity.DeviceWellActivity"
+            android:label="@string/device_main_well"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
         <service
             android:name="song.jtslkj.service.NotificationService"
             android:permission="oem.permission.SENDMAIL" >

@@ -13,9 +13,11 @@ public class MyConfig {
 	// "http://192.168.95.1/WebService.asmx";
 	public static final String methodName_Login = "login";
 	public static final String methodName_GetIntroduction = "getIntroduction";
-	public static final String methodName_GetBudget = "getbudget";
+	public static final String methodName_GetVillage = "getVillage";
+	public static final String methodName_GetWells = "getWells";
+
 	public static final String methodName_GetBudgetInfo = "getBudgetInfo ";
-	public static final String methodName_GetConsume = "getconsume";
+
 	public static final String methodName_GetConsumeByIf = "getconsumebyif";
 	public static final String methodName_GetConsumeLate = "getconsumeLate";
 	public static final String methodName_GetWorkList = "getWorkList";

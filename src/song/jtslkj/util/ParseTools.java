@@ -1,16 +1,61 @@
 package song.jtslkj.util;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import song.jtslkj.bean.BudgetBean;
 import song.jtslkj.bean.ConsumeBean;
 import song.jtslkj.bean.IncomeBean;
 import song.jtslkj.bean.LogBean;
+import song.jtslkj.bean.WellAttrBean;
+import song.jtslkj.bean.WellBean;
 import song.jtslkj.bean.WorkBean;
 import song.jtslkj.bean.WorkItemBean;
 import song.jtslkj.config.MyConfig;
 
 public class ParseTools {
+
+
+	public static List<WellBean> json2WellBeanList(String json){
+		List<WellBean> wellBeans = new ArrayList<>();
+		JSONObject originalJson = null;
+		try {
+			originalJson = new JSONObject(json);
+			JSONArray wellsJsonArray = originalJson.getJSONArray("data");
+			for (int i = 0; i < wellsJsonArray.length(); i++) {
+				WellBean wellBean = new WellBean();
+				JSONObject wellJson = wellsJsonArray.getJSONObject(i);
+				wellBean.setWellCode(wellJson.getString("wellCode"));
+				wellBean.setWellName(wellJson.getString("wellName"));
+				wellBean.setLocation(wellJson.getString("location"));
+				wellBean.setState(wellJson.getInt("state"));
+				wellBean.setUpdateTime(wellJson.getString("updateTime"));
+				List<WellAttrBean> wellAttrBeans = new ArrayList<>();
+				JSONArray wellAttrsArray = wellJson.getJSONArray("attr");
+				for (int j = 0; j < wellAttrsArray.length(); j++) {
+					WellAttrBean wellAttrBean  = new WellAttrBean();
+					JSONObject wellAttrJson = wellAttrsArray.getJSONObject(j);
+					wellAttrBean.setCode(wellAttrJson.getString("code"));
+					wellAttrBean.setName(wellAttrJson.getString("name"));
+					wellAttrBean.setValue(wellAttrJson.getString("value"));
+					wellAttrBeans.add(wellAttrBean);
+				}
+				wellBean.setAttr(wellAttrBeans);
+				wellBeans.add(wellBean);
+			}
+			return  wellBeans;
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+       return null;
+
+	}
+
 	/**
 	 * 将服务器获取的数据转化为一个预算豆子，如果预算花费为0，就是0
 	 * 
@@ -44,8 +89,8 @@ public class ParseTools {
 	/**
 	 * 将从服务器直接获取得到的一行数据转化为consumebean的形式
 	 * 
-	 * @param value是从服务器直接获取到的一行数据
-	 *            格式如下 709^冷面^公共^小吃^5^2015/7/5 5:02:10^来自我的手机^
+	 * @param
+	 *
 	 * @return 返回一个豆子
 	 */
 	public static ConsumeBean string2consumebean(String value) {
