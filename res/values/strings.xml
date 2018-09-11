@@ -191,4 +191,6 @@
 
     <string name="device_well_detail_attr">机井信息</string>
 
+    <string name="gis_project_address">项目地址</string>
+
 </resources>

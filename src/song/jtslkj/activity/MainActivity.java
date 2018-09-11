@@ -86,14 +86,14 @@ public class MainActivity extends TabActivity {
 		mTabHost = getTabHost();
 
 		Intent iHome = new Intent(this, HomeActivity.class);
-		Intent i_chijia = new Intent(this, ChijiaActivity.class);
+		Intent iGis = new Intent(this, GisActivity.class);
 		Intent iDevice = new Intent(this, DeviceActivity.class);
 		Intent i_wojia = new Intent(this, WojiaActivity.class);
 
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_HOME)
 				.setIndicator(TAB_HOME).setContent(iHome));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_GIS)
-				.setIndicator(TAB_GIS).setContent(i_chijia));
+				.setIndicator(TAB_GIS).setContent(iGis));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_DEVICE).setIndicator(TAB_DEVICE)
 				.setContent(iDevice));
 		mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSON).setIndicator(TAB_PERSON)

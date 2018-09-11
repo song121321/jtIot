@@ -3,6 +3,7 @@
 
     <color name="appbg">#fff2f2f2</color>
     <color name="transparent">#00000000</color>
+    <color name="map_filled">#841e90ff</color>
     <color name="weixingreen">#45c01a</color>
     <color name="main_textcolor_normal">#696969</color>
     <color name="main_textcolor_select">#2344Fb</color>

@@ -1,5 +1,7 @@
 package song.jtslkj.util;
 
+import com.tianditu.android.maps.GeoPoint;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,6 +34,8 @@ public class ParseTools {
 				wellBean.setWellCode(wellJson.getString("wellCode"));
 				wellBean.setWellName(wellJson.getString("wellName"));
 				wellBean.setLocation(wellJson.getString("location"));
+				GeoPoint point = new GeoPoint(wellJson.getInt("pointLan"),wellJson.getInt("pointLon"));
+				wellBean.setPoint(point);
 				wellBean.setState(wellJson.getInt("state"));
 				wellBean.setUpdateTime(wellJson.getString("updateTime"));
 				List<WellAttrBean> wellAttrBeans = new ArrayList<>();

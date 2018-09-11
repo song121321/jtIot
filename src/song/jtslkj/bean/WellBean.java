@@ -1,5 +1,7 @@
 package song.jtslkj.bean;
 
+import com.tianditu.android.maps.GeoPoint;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -12,9 +14,18 @@ public class WellBean implements Serializable {
     // -1 mistake
     private int state;
     private String location;
+    private GeoPoint point;
     private String updateTime;
 
     private List<WellAttrBean> attr;
+
+    public GeoPoint getPoint() {
+        return point;
+    }
+
+    public void setPoint(GeoPoint point) {
+        this.point = point;
+    }
 
     public String getWellCode() {
         return wellCode;
