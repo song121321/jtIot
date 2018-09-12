@@ -14,17 +14,27 @@ public class WellBean implements Serializable {
     // -1 mistake
     private int state;
     private String location;
-    private GeoPoint point;
     private String updateTime;
+    private int pointLan;
+    private int pointLon;
 
     private List<WellAttrBean> attr;
 
-    public GeoPoint getPoint() {
-        return point;
+
+    public int getPointLan() {
+        return pointLan;
     }
 
-    public void setPoint(GeoPoint point) {
-        this.point = point;
+    public void setPointLan(int pointLan) {
+        this.pointLan = pointLan;
+    }
+
+    public int getPointLon() {
+        return pointLon;
+    }
+
+    public void setPointLon(int pointLon) {
+        this.pointLon = pointLon;
     }
 
     public String getWellCode() {

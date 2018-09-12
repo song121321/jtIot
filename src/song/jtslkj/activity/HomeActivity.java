@@ -11,6 +11,8 @@ import android.util.DisplayMetrics;
 import android.widget.TextView;
 
 import com.jtslkj.R;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,6 +25,7 @@ import song.jtslkj.util.WebServiceUtil;
 
 public class HomeActivity extends BaseActivity {
 
+    private RefreshLayout mRefreshLayout;
     TextView tv;
     HtmlSpanner htmlSpanner;
     ArrayList<String> imglist;
@@ -32,12 +35,19 @@ public class HomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        mRefreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         imglist = new ArrayList<>();
         htmlSpanner = new HtmlSpanner(this, dm.widthPixels, handler);
         showLoadingDialog();
-        new GetIntroductionTask().execute();
+        mRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
+            @Override
+            public void onRefresh(RefreshLayout refreshlayout) {
+                new GetIntroductionTask().execute();
+                refreshlayout.finishRefresh();
+            }
+        });
     }
 
 

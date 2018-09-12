@@ -34,8 +34,8 @@ public class ParseTools {
 				wellBean.setWellCode(wellJson.getString("wellCode"));
 				wellBean.setWellName(wellJson.getString("wellName"));
 				wellBean.setLocation(wellJson.getString("location"));
-				GeoPoint point = new GeoPoint(wellJson.getInt("pointLan"),wellJson.getInt("pointLon"));
-				wellBean.setPoint(point);
+				wellBean.setPointLan(wellJson.getInt("pointLan"));
+				wellBean.setPointLon(wellJson.getInt("pointLon"));
 				wellBean.setState(wellJson.getInt("state"));
 				wellBean.setUpdateTime(wellJson.getString("updateTime"));
 				List<WellAttrBean> wellAttrBeans = new ArrayList<>();
