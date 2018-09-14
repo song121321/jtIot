@@ -46,12 +46,6 @@ public class BaseActivity extends Activity implements OnClickListener {
 		dialog = DialogUtil.createLoadingDialog(this, "正在加载中..");
 		dialog.setCancelable(true);
 		dialog.show();
-		SYSDiaLogUtils.showProgressDialog(this, SYSDiaLogUtils.SYSDiaLogType.IosType, "加載中...", false, new DialogInterface.OnCancelListener() {
-			@Override
-			public void onCancel(DialogInterface dialog) {
-				Toast.makeText(MainActivity.this, "點擊消失", Toast.LENGTH_SHORT).show();
-			}
-		});
 	}
 
 	public void showLoadingDialog(String msg) {
