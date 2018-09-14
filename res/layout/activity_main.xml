@@ -37,7 +37,7 @@
                 android:checked="true"
                 android:drawableTop="@drawable/main_bottom_home_selector"
                 android:text="@string/home"
-                android:textColor="@color/main_textcolor_select" />
+                android:textColor="@color/actionbar_bg" />
 
             <RadioButton
                 android:id="@+id/home_tab_gis"

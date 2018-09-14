@@ -35,7 +35,7 @@ public class WojiaSettingActivity extends BaseActivity implements
 	private void findViewByid() {
 		rl_tongyong = (RelativeLayout) findViewById(R.id.rl_wojia_setting_tongyong);
 		rl_anquan = (RelativeLayout) findViewById(R.id.rl_wojia_setting_anquan);
-		rl_commonbudget = (RelativeLayout) findViewById(R.id.rl_wojia_setting_commonbudget);
+
 		rl_news = (RelativeLayout) findViewById(R.id.rl_wojia_setting_news);
 		rl_clear = (RelativeLayout) findViewById(R.id.rl_wojia_setting_clear);
 		rl_about = (RelativeLayout) findViewById(R.id.rl_wojia_setting_about);
@@ -45,7 +45,7 @@ public class WojiaSettingActivity extends BaseActivity implements
 	private void setoncliker() {
 		rl_tongyong.setOnClickListener(this);
 		rl_anquan.setOnClickListener(this);
-		rl_commonbudget.setOnClickListener(this);
+	//	rl_commonbudget.setOnClickListener(this);
 		rl_news.setOnClickListener(this);
 		rl_clear.setOnClickListener(this);
 		rl_about.setOnClickListener(this);
@@ -66,11 +66,7 @@ public class WojiaSettingActivity extends BaseActivity implements
 			intent.putExtra("position", 1);
 			startActivity(intent);
 			break;
-		case R.id.rl_wojia_setting_commonbudget:
 
-			intent.putExtra("position", 2);
-			startActivity(intent);
-			break;
 		case R.id.rl_wojia_setting_news:
 
 			intent.putExtra("position", 3);

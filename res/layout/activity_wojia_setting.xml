@@ -109,40 +109,40 @@
                         android:src="@drawable/go_to_icon" />
                 </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.1dp"
-                    android:layout_marginRight="2dp"
-                    android:background="#dadada" />
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.1dp"-->
+                    <!--android:layout_marginRight="2dp"-->
+                    <!--android:background="#dadada" />-->
 
-                <RelativeLayout
-                   android:id="@+id/rl_wojia_setting_commonbudget"
-                    android:layout_width="fill_parent"
-                    android:layout_height="42dip"
-                    android:background="@drawable/btn_list_item_bg"
-                    android:clickable="true" >
+                <!--<RelativeLayout-->
+                   <!--android:id="@+id/rl_wojia_setting_commonbudget"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="42dip"-->
+                    <!--android:background="@drawable/btn_list_item_bg"-->
+                    <!--android:clickable="true" >-->
 
-                    <TextView
-                        android:id="@+id/card_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="20dip"
-                        android:text="@string/wojia_main_commonbudget"
-                        android:textColor="#202020"
-                        android:textSize="16sp" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/card_text"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="20dip"-->
+                        <!--android:text="@string/wojia_main_commonbudget"-->
+                        <!--android:textColor="#202020"-->
+                        <!--android:textSize="16sp" />-->
 
-                    <ImageView
-                        android:id="@+id/row_img_02"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dip"
-                        android:contentDescription="@string/app_name"
-                        android:scaleType="matrix"
-                        android:src="@drawable/go_to_icon" />
-                </RelativeLayout>
+                    <!--<ImageView-->
+                        <!--android:id="@+id/row_img_02"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="10dip"-->
+                        <!--android:contentDescription="@string/app_name"-->
+                        <!--android:scaleType="matrix"-->
+                        <!--android:src="@drawable/go_to_icon" />-->
+                <!--</RelativeLayout>-->
 
                 <View
                     android:layout_width="match_parent"

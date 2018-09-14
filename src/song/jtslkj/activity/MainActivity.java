@@ -130,7 +130,7 @@ public class MainActivity extends TabActivity {
 		switch (index) {
 		case 1:
 			rButtonHome.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
+					R.color.actionbar_bg));
 			rButtonGis.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			rButtonFacility.setTextColor(getResources().getColor(
@@ -142,7 +142,7 @@ public class MainActivity extends TabActivity {
 			rButtonHome.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			rButtonGis.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
+					R.color.actionbar_bg));
 			rButtonFacility.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			rButtonI.setTextColor(getResources().getColor(
@@ -154,7 +154,7 @@ public class MainActivity extends TabActivity {
 			rButtonGis.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			rButtonFacility.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
+					R.color.actionbar_bg));
 			rButtonI.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			break;
@@ -167,7 +167,7 @@ public class MainActivity extends TabActivity {
 			rButtonFacility.setTextColor(getResources().getColor(
 					R.color.main_textcolor_normal));
 			rButtonI.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
+					R.color.actionbar_bg));
 			break;
 
 		default:

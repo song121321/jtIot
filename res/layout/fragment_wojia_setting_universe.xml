@@ -16,7 +16,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="25dp"
-            android:text="@string/wojia_setting_tongyong_savabudget"
+            android:text="@string/app_name"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
 
@@ -29,7 +29,7 @@
             android:layout_marginRight="31dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="@string/wojia_setting_tongyong_savabudget_explain"
+            android:text="@string/app_name"
             android:textColor="@color/bg_Gray_dark"
             android:textSize="12sp" />
 
