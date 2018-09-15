@@ -15,6 +15,7 @@ public class MyConfig {
 	public static final String methodName_GetIntroduction = "getIntroduction";
 	public static final String methodName_GetVillages = "getVillages";
 	public static final String methodName_GetWells = "getWells";
+	public static final String methodName_GetStaDayNet = "getStaDayNet";
 
 	public static final String methodName_GetBudgetInfo = "getBudgetInfo ";
 
