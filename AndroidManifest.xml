@@ -150,18 +150,21 @@
         <activity
             android:name="song.jtslkj.activity.GisActivity"
             android:label="@string/device_main_well"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name="song.jtslkj.activity.DeviceActivity" />
         <activity
             android:name="song.jtslkj.activity.DeviceWellActivity"
             android:label="@string/device_main_well"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="song.jtslkj.activity.DeviceWellDetailActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
-            android:name="song.jtslkj.activity.DeviceStaActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="song.jtslkj.activity.DeviceStaTableActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+        <activity android:name="song.jtslkj.activity.DeviceStaActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             />
 
         <service

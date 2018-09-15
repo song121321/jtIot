@@ -13,6 +13,7 @@ import song.jtslkj.bean.BudgetBean;
 import song.jtslkj.bean.ConsumeBean;
 import song.jtslkj.bean.IncomeBean;
 import song.jtslkj.bean.LogBean;
+import song.jtslkj.bean.StaBean;
 import song.jtslkj.bean.StaDayNetBean;
 import song.jtslkj.bean.WellAttrBean;
 import song.jtslkj.bean.WellBean;
@@ -107,7 +108,31 @@ public class ParseTools {
 
 	}
 
-	/**
+
+    public static List<StaBean> json2StaBeanList(String json){
+        List<StaBean> staBeans = new ArrayList<>();
+        JSONObject originalJson = null;
+        try {
+            originalJson = new JSONObject(json);
+            JSONArray staBeansJsonArray = originalJson.getJSONArray("data");
+            for (int i = 0; i < staBeansJsonArray.length(); i++) {
+                StaBean staBean = new StaBean();
+                JSONObject staJson = staBeansJsonArray.getJSONObject(i);
+                staBean.setCode(staJson.getString("code"));
+                staBean.setName(staJson.getString("name"));
+                staBean.setDescription(staJson.getString("description"));
+                staBeans.add(staBean);
+            }
+            return  staBeans;
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+
+    }
+
+    /**
 	 * 将服务器获取的数据转化为一个预算豆子，如果预算花费为0，就是0
 	 * 
 	 * @param value

@@ -1,10 +1,16 @@
 package song.jtslkj.activity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.bin.david.form.core.SmartTable;
 import com.jtslkj.R;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
@@ -12,27 +18,72 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import java.util.HashMap;
 import java.util.List;
 
+import song.jtslkj.adapter.StaAdapter;
 import song.jtslkj.app.MyApplication;
-import song.jtslkj.bean.StaDayNetBean;
+import song.jtslkj.bean.StaBean;
 import song.jtslkj.config.MyConfig;
 import song.jtslkj.util.ParseTools;
 import song.jtslkj.util.WebServiceUtil;
 
-public class DeviceStaActivity extends BaseActivity {
-
+public class DeviceStaActivity extends BaseActivity implements AdapterView.OnItemClickListener {
+    private ListView chooseList;
     private RefreshLayout mRefreshLayout;
-    private SmartTable<StaDayNetBean> smartTable;
-    private TextView tv_title;
-    private List<StaDayNetBean> tableDataList;
+    private LinearLayout llBack;
+    private TextView tvTitle;
+    private List<StaBean> staBeans;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_device_sta_table);
+        setContentView(R.layout.activity_device_sta);
         MyApplication.getInstance().addActivity(this);
-        findViewByid();
+        findViewById();
+        initView();
         setClicker();
+    }
+
+    private void findViewById() {
+        chooseList = (ListView) findViewById(R.id.lv_device_sta);
+        tvTitle = (TextView) findViewById(R.id.tv_actionbar_usual_title);
+        mRefreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
+        llBack = (LinearLayout) findViewById(R.id.ll_actionbar_left);
+    }
+
+    private void initView() {
+        initActionBar();
         refresh();
+    }
+
+
+    private void setAdapter(List<StaBean> staBeans) {
+
+        StaAdapter staAdapter = new StaAdapter(DeviceStaActivity.this, staBeans);
+        chooseList.setAdapter(staAdapter);
+        closeLoadingDialog();
+    }
+
+    private void initActionBar() {
+        tvTitle.setText(getResources().getString(R.string.device_main_sta));
+        llBack.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                MyApplication.getInstance().removeActivity(
+                        DeviceStaActivity.this);
+                finish();
+
+            }
+        });
+
+    }
+
+    private void refresh() {
+        showLoadingDialog();
+        new StaDownLoadTask().execute();
+    }
+
+    private void setClicker() {
+        chooseList.setOnItemClickListener(this);
         mRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {
@@ -42,39 +93,20 @@ public class DeviceStaActivity extends BaseActivity {
         });
     }
 
-    private void findViewByid() {
-        mRefreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
-        smartTable = (SmartTable<StaDayNetBean>) findViewById(R.id.st_device_sta_table);
-        tv_title = (TextView) findViewById(R.id.tv_actionbar_usual_title);
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        String text = chooseList.getItemAtPosition(position) + "";
+        Toast.makeText(this, "position=" + position + "text=" + text,
+                Toast.LENGTH_SHORT).show();
+        Intent deviceStaIntent = new Intent(DeviceStaActivity.this,
+                DeviceStaTableActivity.class);
+        startActivity(deviceStaIntent);
     }
 
-    private void setClicker() {
+    private class StaDownLoadTask extends AsyncTask<Void, Void, String> {
 
-
-    }
-
-    private void refresh() {
-        showLoadingDialog();
-        new StaNetDownLoadTask().execute();
-    }
-
-    private void drawData() {
-        tv_title.setText("日净统计");
-        smartTable.setData(tableDataList);
-        smartTable.getConfig().setShowXSequence(false);
-        smartTable.getConfig().setShowYSequence(false);
-        smartTable.getConfig().setShowTableTitle(false);
-        smartTable.getConfig().setFixedCountRow(true);
-        // smartTable.getConfig().setContentStyle(new FontStyle(50, Color.BLUE));
-
-        smartTable.setZoom(true);
-        closeLoadingDialog();
-
-    }
-
-    private class StaNetDownLoadTask extends AsyncTask<Void, Void, String> {
-
-        StaNetDownLoadTask() {
+        StaDownLoadTask() {
             super();
         }
 
@@ -82,7 +114,7 @@ public class DeviceStaActivity extends BaseActivity {
         protected String doInBackground(Void... arg0) {
             HashMap<String, String> params = new HashMap<String, String>();
             String nameSpace = MyConfig.nameSpace;
-            String methodName = MyConfig.methodName_GetStaDayNet;
+            String methodName = MyConfig.methodName_GetStaChooseList;
             String endPoint = MyConfig.endPoint;
             return WebServiceUtil.getAnyType(nameSpace, methodName,
                     endPoint, params);
@@ -91,10 +123,9 @@ public class DeviceStaActivity extends BaseActivity {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            tableDataList = ParseTools.json2StaDayNetBeanList(result);
-            drawData();
+            staBeans = ParseTools.json2StaBeanList(result);
+            setAdapter(staBeans);
         }
     }
-
 
 }

@@ -16,7 +16,7 @@ public class MyConfig {
 	public static final String methodName_GetVillages = "getVillages";
 	public static final String methodName_GetWells = "getWells";
 	public static final String methodName_GetStaDayNet = "getStaDayNet";
-
+	public static final String methodName_GetStaChooseList = "getStaChooseList";
 	public static final String methodName_GetBudgetInfo = "getBudgetInfo ";
 
 	public static final String methodName_GetConsumeByIf = "getconsumebyif";
