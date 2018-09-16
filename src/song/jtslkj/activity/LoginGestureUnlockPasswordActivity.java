@@ -71,40 +71,6 @@ public class LoginGestureUnlockPasswordActivity extends BaseActivity {
                 finish();
             }
         });
-        iv_face = (ImageView) findViewById(R.id.gesturepwd_unlock_face);
-        iv_face.setOnLongClickListener(new OnLongClickListener() {
-
-            @Override
-            public boolean onLongClick(View arg0) {
-
-                final EditText inputServer = new EditText(LoginGestureUnlockPasswordActivity.this);
-                inputServer.setFocusable(true);
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(LoginGestureUnlockPasswordActivity.this);
-                builder.setTitle("input server").setView(inputServer).setNegativeButton(
-                        "取消", null);
-
-                inputServer.setText(MyConfig.ServerAddress);
-                builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
-
-                    @Override
-                    public void onClick(DialogInterface arg0, int arg1) {
-                        // TODO Auto-generated method stub
-                        //	MyConfig.ServerAddress = inputServer.getText().toString();
-                        asp.writeStringToSharedpreference("ServerAddress", inputServer.getText().toString());
-                        showToast("重啟生效");
-                    }
-
-
-                });
-                builder.show();
-
-                return false;
-
-
-            }
-        });
-
     }
 
     @Override

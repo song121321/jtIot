@@ -41,11 +41,6 @@ public class HomeActivity extends BaseActivity {
         imglist = new ArrayList<>();
         htmlSpanner = new HtmlSpanner(this, dm.widthPixels, handler);
         showLoadingDialog();
-//        SweetAlertDialog  dialog = new SweetAlertDialog(this, SweetAlertDialog.PROGRESS_TYPE);
-//        dialog.getProgressHelper().setBarColor(this.getResources().getColor(R.color.actionbar_bg));
-//        dialog.setTitleText(this.getResources().getString(R.string.xlistview_header_hint_loading));
-//        dialog.setCancelable(false);
-//        dialog.show();
         new GetIntroductionTask().execute();
         mRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
