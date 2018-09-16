@@ -1,11 +1,5 @@
 package song.jtslkj.activity;
 
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.fragment.WojiaSettingCommonBudgetFragment;
-import song.jtslkj.fragment.WojiaSettingNewsFragment;
-import song.jtslkj.fragment.WojiaSettingSafetyFragment;
-import song.jtslkj.fragment.WojiaSettingUniverseFragment;
-import com.jtslkj.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -16,6 +10,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.jtslkj.R;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.fragment.WojiaSettingSafetyFragment;
+import song.jtslkj.fragment.WojiaSettingUniverseFragment;
 
 public class WojiaSettingContentActivity extends FragmentActivity {
 	private TextView mTextView;
@@ -59,8 +59,6 @@ public class WojiaSettingContentActivity extends FragmentActivity {
 	private void initFragmentArray() {
 		Fragment f0 = new WojiaSettingUniverseFragment();
 		Fragment f1 = new WojiaSettingSafetyFragment();
-		Fragment f2 = new WojiaSettingCommonBudgetFragment();
-		Fragment f3 = new WojiaSettingNewsFragment();
 		// Fragment f4 = new ISetting_ShareAccount();
 		// Fragment f5 = new ISetting_AboutUs();
 		// Fragment f6 = new ISetting_DeleteRestore();
@@ -68,8 +66,6 @@ public class WojiaSettingContentActivity extends FragmentActivity {
 		fragments = new Fragment[4];
 		fragments[0] = f0;
 		fragments[1] = f1;
-		fragments[2] = f2;
-		fragments[3] = f3;
 		// fragments[4] = f4;
 		// fragments[5] = f5;
 		// fragments[6] = f6;

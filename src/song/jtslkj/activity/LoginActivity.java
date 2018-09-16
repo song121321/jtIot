@@ -100,7 +100,6 @@ public class LoginActivity extends BaseActivity {
 								.getText().toString());
 				Intent i = new Intent(LoginActivity.this, MainActivity.class);
 				startActivity(i);
-				addlog("3", "账号登陆","6");
 				finish();
 			} else {
 				tv_prmt.setText(getResources().getString(

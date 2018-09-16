@@ -26,7 +26,7 @@ public class WojiaSettingUniverseFragment extends Fragment {
 				.findViewById(R.id.sb_wojia_setting_universe_savabudget);
 		asph = new AccountSharedPreferenceHelper(getActivity());
 		if (asph.readStringFromSharedpreference(
-				MyConfig.sharedpreference_tablecol_savabudget).trim()
+				"MyConfig.sharedpreference_tablecol_savabudget").trim()
 				.equals("")) {
 
 		} else {
@@ -38,12 +38,10 @@ public class WojiaSettingUniverseFragment extends Fragment {
 			@Override
 			public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
 				if (arg1) {
-					asph.writeStringToSharedpreference(
-							MyConfig.sharedpreference_tablecol_savabudget,
-							"yes");
+
 				} else {
 					asph.writeStringToSharedpreference(
-							MyConfig.sharedpreference_tablecol_savabudget, "");
+							"MyConfig.sharedpreference_tablecol_savabudget", "");
 				}
 			}
 		});

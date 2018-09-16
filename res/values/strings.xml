@@ -2,13 +2,10 @@
 <resources>
 
     <string name="app_name">金田物联</string>
-    <string name="lisong">李松</string>
     <string name="niming">匿名</string>
     <string name="on">开启</string>
     <string name="close">关闭</string>
-    <string name="hss">hss</string>
     <string name="admin">admin</string>
-    <string name="Hss">Hss</string>
     <string name="Admin">Admin</string>
     <string name="home">主页</string>
     <string name="gis">Gis</string>
@@ -16,7 +13,6 @@
     <string name="i">我的</string>
     <string name="all">所有</string>
     <string name="sort">排序</string>
-    <string name="houshuangshuang">侯双双</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="system_sure">确定</string>
@@ -25,6 +21,7 @@
     <string name="system_return">返回</string>
     <string name="system_cancel">取消</string>
     <string name="system_delete">删除</string>
+    <string name="system_search">搜索</string>
     <string name="system_prompt">提示</string>
     <string name="system_save">保存</string>
     <string name="system_edit">编辑</string>
@@ -34,14 +31,6 @@
     <string name="system_about">关于</string>
     <string name="system_time">时间</string>
     <string name="main_tabtext_jijing">机井</string>
-    <string name="main_tabtext_chijia">持家</string>
-    <string name="main_tabtext_hejia">和家</string>
-    <string name="main_tabtext_wojia">我家</string>
-    <string name="type_add">添加</string>
-    <string name="type_update">更新</string>
-    <string name="type_delete">删除</string>
-    <string name="type_login">登陆</string>
-    <string name="type_view">浏览</string>
 
     <!-- xlistview -->
     <string name="xlistview_header_hint_normal">下拉刷新</string>
@@ -90,76 +79,10 @@
     <string name="gesture_password_unlock_nmiaochonhgshi">%1$d秒后重试</string>
     <string name="gesture_password_forgethint">你可以使用账号登陆，在我家->设置->安全中清除密码</string>
 
-    <!-- baijia -->
-    <string name="baijia_daohang_add">添加新消费</string>
-    <string name="baijia_daohang_addnewbudgetsingle">添加新预算</string>
-    <string name="baijia_daohang_addnewbudgetbatch">批量添加新预算</string>
-    <string name="baijia_daohang_yuefen">月份</string>
-    <string name="baijia_daohang_xiaofeizhe">所有</string>
-    <string name="baijia_daohang_leixing">类型</string>
-    <string name="baijia_add_name">名称</string>
-    <string name="baijia_baijiajilu">败家记录</string>
-    <string name="baijia_add_money">金额</string>
-    <string name="baijia_add_beizhu">备注</string>
-    <string name="baijia_add_time">日期</string>
-    <string name="baijia_add_budget">预算</string>
-    <string name="baijia_add_person">负责人</string>
-    <string name="baijia_add_budget_frute">水果</string>
-    <string name="baijia_add_person_public">公共</string>
-    <string name="baijia_add_person_candidateperson">候选负责人</string>
-    <string name="baijia_add_person_fromphone">来自我的手机</string>
-    <string name="baijia_add_addimg">添加图片</string>
-    <string name="baijia_search_actionbar_searchhint">搜索名称，类型，金额等</string>
-    <string name="baijia_search_jine">金额</string>
-    <string name="baijia_detail_bianji">编辑</string>
-    <string name="baijia_budget_used">已用：¥ %1$s</string>
-    <string name="baijia_budget_left">剩余：¥ %1$s</string>
-    <string name="baijia_budget_total">合计：¥ %1$s元</string>
-    <string name="baijia_budget_addbatch">添加(%1$s)</string>
-    <string name="baijia_budget_settingbudget">设置%1$s的预算</string>
-    <string name="baijia_budget_allchose">全选</string>
-    <string name="baijia_budget_danweiyuan">单位：元</string>
-    <string name="baijia_add_monthbudget">本月分配预算¥ %1$s元</string>
-    <string name="baijia_add_addbatch">批量添加预算</string>
-    <!-- 持家 -->
-    <string name="chijia_work_item_singleprice">单价：¥ %1$s</string>
-    <string name="chijia_work_item_number">数量      x %1$s</string>
-    <string name="chijia_work_item_changge">变化     + %1$s</string>
-    <string name="chijia_work_item_zhongjia">¥ %1$s</string>
-    <string name="chijia_work_item_havesettle">已结算</string>
-    <string name="chijia_work_item_havenotsettle">未结算</string>
-    <string name="chijia_work_leibie">类别</string>
-    <string name="chijia_work_zhuangtai">状态</string>
-    <string name="chijia_work_workjilu">工作记录</string>
-    <string name="chijia_work_youliao">有料</string>
-    <string name="chijia_work_gongzuomingcheng">工作名称</string>
-    <string name="chijia_work_zeromoney">¥ 0</string>
-    <string name="chijia_work_singleprice">单价</string>
-    <string name="chijia_work_number">数量</string>
-    <string name="chijia_work_changge">变化</string>
-    <string name="chijia_work_zhongjia">终价</string>
-    <string name="chijia_daohang_add">添加新工作</string>
-    <string name="chijia_work">工作</string>
-    <string name="chijia_shouru">收入</string>
-    <string name="chijia_work_detail_editthis">编辑此项</string>
-    <string name="chijia_work_detail_zongjia">总价：</string>
-    <string name="chijia_work_detail_worktime">工作时间</string>
-    <string name="chijia_work_detail_patime">结算时间</string>
-    <string name="chijia_work_detail_nopay">尚未结算</string>
-    <string name="chijia_work_detail_from">来自</string>
-    <string name="chijia_work_detail_beizhu">备注</string>
-    <string name="chijia_income_add_istax">是否纳税</string>
-    <string name="chijia_income_add_addnewincome">添加新收入</string>
-    <string name="chijia_income_add_taxmoney">纳税金额</string>
-    <string name="chijia_income_add_settle">结算工资</string>
-    <string name="chijia_income_add_settlepage">结算确认页</string>
-    <string name="chijia_income_add_settle1">结算(%1$s)</string>
 
     <!-- 我家 -->
     <string name="wojia_main_account">账号:%1$s</string>
-    <string name="wojia_main_friendquan">新鲜事</string>
     <string name="wojia_main_qianbao">钱包</string>
-    <string name="wojia_main_footprint">足迹</string>
     <string name="wojia_main_setting">设置</string>
     <string name="wojia_setting_universe">通用</string>
     <string name="wojia_main_safety">安全</string>
@@ -171,8 +94,6 @@
     <string name="wojia_setting_anquan_closegesturelock">关闭手势解锁</string>
     <string name="wojia_setting_anquan_cleargesturelock_passworddone">已经清空手势解锁</string>
     <string name="wojia_setting_anquan_suretoclearglpass">确认清除手势密码吗？</string>
-    <string name="wojia_setting_tongyong_savabudget">保留预算更改</string>
-    <string name="wojia_setting_tongyong_savabudget_explain">此项开启后，将批量预算修改过的值作为最新的数据，比如饭卡默认是600，更改为300后，下一次也会是300</string>
     <string name="wojia_setting_news_settingnewsnotice">设置提醒消息类型</string>
     <string name="wojia_main_zuji_add">添加</string>
     <string name="wojia_main_zuji_view">浏览</string>

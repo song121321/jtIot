@@ -57,10 +57,6 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
             android:name="song.jtslkj.activity.LoginGestureGuidePasswordActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
@@ -73,18 +69,6 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetAddSingleActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetAddBatchActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
             android:name="song.jtslkj.activity.HomeActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
@@ -93,55 +77,11 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="song.jtslkj.activity.WojiaSettingContentActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
             android:name="song.jtslkj.activity.WojiaSettingActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="song.jtslkj.activity.WojiaZujiActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
             android:name="song.jtslkj.activity.WojiaActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeAddActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeSearchActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeSearchResultActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaWorkAddActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaWorkDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaWorkSettleActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaIncomeAddActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
@@ -170,13 +110,6 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"
             />
 
-        <service
-            android:name="song.jtslkj.service.NotificationService"
-            android:permission="oem.permission.SENDMAIL">
-            <intent-filter>
-                <action android:name="XJK_SERVICE" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>

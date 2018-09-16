@@ -169,13 +169,12 @@ public class LoginGestureUnlockPasswordActivity extends BaseActivity {
 							LoginGestureUnlockPasswordActivity.this,
 							MainActivity.class);
 					startActivity(intent);
-					addlog("3", "锁屏登陆", "6");
 				} else {
-					Intent intent = new Intent(
-							LoginGestureUnlockPasswordActivity.this,
-							BaijiaConsumeSearchActivity.class);
-					startActivity(intent);
-					showShortToast("无网，只能使用本地搜索");
+//					Intent intent = new Intent(
+//							LoginGestureUnlockPasswordActivity.this,
+//							BaijiaConsumeSearchActivity.class);
+//					startActivity(intent);
+//					showShortToast("无网，只能使用本地搜索");
 				}
 				showToast(getString(R.string.gesture_password_unlock_unlocksucess));
 				finish();

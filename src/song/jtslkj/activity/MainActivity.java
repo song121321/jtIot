@@ -44,18 +44,7 @@ public class MainActivity extends TabActivity {
 		findViewById();
 		initView();
 		MyApplication.getInstance().addActivity(this);
-		IntentFilter intentFilter = new IntentFilter();
-		intentFilter.addAction(ACTION_TAB);
-		asph = new AccountSharedPreferenceHelper(this);
-		if (!asph
-				.readStringFromSharedpreference(
-						MyConfig.sharedpreference_tablecol_newson).trim()
-				.equals("")) {
-			registerReceiver(TabReceiver, intentFilter);
-			Intent intent = new Intent();
-			intent.setAction("XJK_SERVICE");
-			startService(intent);
-		}
+
 
 	}
 

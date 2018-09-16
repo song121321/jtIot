@@ -124,9 +124,9 @@ public class DeviceWellActivity extends BaseActivity implements
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(DeviceWellActivity.this,
-                        BaijiaConsumeSearchActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(DeviceWellActivity.this,
+//                        BaijiaConsumeSearchActivity.class);
+//                startActivity(intent);
             }
         });
     }
