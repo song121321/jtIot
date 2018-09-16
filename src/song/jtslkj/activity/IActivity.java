@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class WojiaActivity extends BaseActivity implements OnClickListener {
+public class IActivity extends BaseActivity implements OnClickListener {
     ImageView iv_top_left, iv_top_right, iv_photo, iv_sex;
     TextView tv_top_middle, tv_name, tv_account;
     RelativeLayout re_myinfo, re_friendquan, re_setting, re_qianbao, re_zuji;
@@ -22,7 +22,7 @@ public class WojiaActivity extends BaseActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wojia_main);
+        setContentView(R.layout.activity_i_main);
         MyApplication.getInstance().addActivity(this);
         findViewByid();
         initview();
@@ -63,7 +63,7 @@ public class WojiaActivity extends BaseActivity implements OnClickListener {
                 .readStringFromSharedpreference(MyConfig.sharedpreference_tablecol_account);
         if (!account.equals("")) {
             String sFormat, sFinal;
-            sFormat = getResources().getString(R.string.wojia_main_account);
+            sFormat = getResources().getString(R.string.i_main_account);
             sFinal = String.format(sFormat, account);
             tv_account.setText(sFinal);
         }
@@ -83,8 +83,8 @@ public class WojiaActivity extends BaseActivity implements OnClickListener {
                 break;
             case R.id.re_wojia_main_setting:
 
-                Intent intent = new Intent(WojiaActivity.this,
-                        WojiaSettingActivity.class);
+                Intent intent = new Intent(IActivity.this,
+                        ISettingActivity.class);
                 startActivity(intent);
                 break;
         }

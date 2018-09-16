@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dip"
-                        android:text="@string/wojia_setting_universe"
+                        android:text="@string/i_setting_universe"
                         android:textColor="#202020"
                         android:textSize="16sp" />
 
@@ -94,7 +94,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dip"
-                        android:text="@string/wojia_main_safety"
+                        android:text="@string/i_main_safety"
                         android:textColor="#202020"
                         android:textSize="16sp" />
 
@@ -162,7 +162,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dip"
-                        android:text="@string/wojia_main_news"
+                        android:text="@string/app_name"
                         android:textColor="#202020"
                         android:textSize="16sp" />
 
@@ -208,7 +208,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dip"
-                        android:text="@string/wojia_main_clear"
+                        android:text="@string/i_main_clear_and_init"
                         android:textColor="#202020"
                         android:textSize="16sp" />
 

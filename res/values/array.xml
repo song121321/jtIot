@@ -20,11 +20,7 @@
         <item>李松</item>
         <item>侯双双</item>
     </string-array>
-    <string-array name="person_arr1">
-        <item>所有</item>
-        <item>李松</item>
-        <item>侯双双</item>
-    </string-array>
+
     <string-array name="setting_arr">
         <item>通用</item>
         <item>安全</item>

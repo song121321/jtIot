@@ -51,9 +51,7 @@ public abstract class SplashBaseActivity extends Activity {
 
 	public abstract void initListeners();
 	
-	/** ������ݳ�ʼ��
-	  * initData
-	  */
+
 	public abstract void initData();
 	Toast mToast;
 

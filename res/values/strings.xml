@@ -30,7 +30,6 @@
     <string name="system_exit">退出</string>
     <string name="system_about">关于</string>
     <string name="system_time">时间</string>
-    <string name="main_tabtext_jijing">机井</string>
 
     <!-- xlistview -->
     <string name="xlistview_header_hint_normal">下拉刷新</string>
@@ -80,26 +79,19 @@
     <string name="gesture_password_forgethint">你可以使用账号登陆，在我家->设置->安全中清除密码</string>
 
 
-    <!-- 我家 -->
-    <string name="wojia_main_account">账号:%1$s</string>
-    <string name="wojia_main_qianbao">钱包</string>
-    <string name="wojia_main_setting">设置</string>
-    <string name="wojia_setting_universe">通用</string>
-    <string name="wojia_main_safety">安全</string>
-    <string name="wojia_main_news">新消息提醒</string>
-    <string name="wojia_main_clear">清空与恢复</string>
-    <string name="wojia_main_suretoexit">确定退出吗？将清空设置</string>
-    <string name="wojia_main_commonbudget">常用预算设置</string>
-    <string name="wojia_setting_anquan_cleargesturelock">清空手势密码</string>
-    <string name="wojia_setting_anquan_closegesturelock">关闭手势解锁</string>
-    <string name="wojia_setting_anquan_cleargesturelock_passworddone">已经清空手势解锁</string>
-    <string name="wojia_setting_anquan_suretoclearglpass">确认清除手势密码吗？</string>
-    <string name="wojia_setting_news_settingnewsnotice">设置提醒消息类型</string>
-    <string name="wojia_main_zuji_add">添加</string>
-    <string name="wojia_main_zuji_view">浏览</string>
-    <string name="wojia_main_zuji_login">登陆</string>
-    <string name="wojia_main_zuji_delete">删除</string>
-    <string name="wojia_main_zuji_update">修改</string>
+    <!-- 我的 -->
+    <string name="i_main_account">账号:%1$s</string>
+    <string name="i_main_qianbao">钱包</string>
+    <string name="i_main_setting">设置</string>
+    <string name="i_setting_universe">通用</string>
+    <string name="i_main_safety">安全</string>
+    <string name="i_main_clear_and_init">清空与恢复</string>
+    <string name="i_main_sure_to_exit">确定退出吗？将清空设置</string>
+    <string name="i_setting_safety_clear_gesture_lock">清空手势密码</string>
+    <string name="i_setting_safety_close_gesture_lock">关闭手势解锁</string>
+    <string name="i_setting_safety_clear_gesture_lock_password_done">已经清空手势解锁</string>
+    <string name="i_setting_safety_sure_to_clear_gesture_lock_passwd">确认清除手势密码吗？</string>
+
 
     <!-- Device -->
     <string name="device">设备</string>

@@ -1,6 +1,5 @@
 package song.jtslkj.fragment;
 
-import song.jtslkj.config.MyConfig;
 import song.jtslkj.util.AccountSharedPreferenceHelper;
 import com.jtslkj.R;
 import android.os.Bundle;
@@ -13,7 +12,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.kyleduo.switchbutton.SwitchButton;
 
-public class WojiaSettingUniverseFragment extends Fragment {
+public class ISettingUniverseFragment extends Fragment {
 	private SwitchButton sb_savebudget;
 	private View v;
 	AccountSharedPreferenceHelper asph;
@@ -21,7 +20,7 @@ public class WojiaSettingUniverseFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		v = inflater.inflate(R.layout.fragment_wojia_setting_universe, null);
+		v = inflater.inflate(R.layout.fragment_i_setting_universe, null);
 		sb_savebudget = (SwitchButton) v
 				.findViewById(R.id.sb_wojia_setting_universe_savabudget);
 		asph = new AccountSharedPreferenceHelper(getActivity());

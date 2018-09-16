@@ -63,7 +63,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="16dp"
             android:layout_toRightOf="@id/iv_wojia_main_avatar"
-            android:text="@string/wojia_main_account"
+            android:text="@string/i_main_account"
             android:textColor="#AAAAAA"
             android:textSize="14sp" />
     </RelativeLayout>
@@ -131,7 +131,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/iv_money_bag"
-            android:text="@string/wojia_main_qianbao"
+            android:text="@string/i_main_qianbao"
             android:textColor="#353535"
             android:textSize="16sp" />
 
@@ -205,7 +205,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/iv_setting"
-            android:text="@string/wojia_main_setting"
+            android:text="@string/i_main_setting"
             android:textColor="#353535"
             android:textSize="16sp" />
     </RelativeLayout>

@@ -2,7 +2,7 @@ package song.jtslkj.activity;
 
 import song.jtslkj.app.MyApplication;
 import song.jtslkj.util.InitExitUtil;
-import song.jtslkj.util.LoginGesturePatternUtils;
+
 import com.jtslkj.R;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -13,9 +13,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
-public class WojiaSettingActivity extends BaseActivity implements
+public class ISettingActivity extends BaseActivity implements
 		OnClickListener {
 	RelativeLayout rl_tongyong, rl_anquan, rl_commonbudget, rl_news, rl_clear,
 			rl_about;
@@ -24,7 +23,7 @@ public class WojiaSettingActivity extends BaseActivity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_wojia_setting);
+		setContentView(R.layout.activity_i_setting);
 		MyApplication.getInstance().addActivity(this);
 		findViewByid();
 		// initview();
@@ -54,7 +53,7 @@ public class WojiaSettingActivity extends BaseActivity implements
 
 	@Override
 	public void onClick(View v) {
-		Intent intent = new Intent(this, WojiaSettingContentActivity.class);
+		Intent intent = new Intent(this, ISettingContentActivity.class);
 		switch (v.getId()) {
 		case R.id.rl_wojia_setting_tongyong:
 
@@ -74,8 +73,8 @@ public class WojiaSettingActivity extends BaseActivity implements
 			break;
 		case R.id.bt_wojia_setting_exit:
 
-			AlertDialog.Builder builder = new Builder(WojiaSettingActivity.this);
-			builder.setMessage(getString(R.string.wojia_main_suretoexit));
+			AlertDialog.Builder builder = new Builder(ISettingActivity.this);
+			builder.setMessage(getString(R.string.i_main_sure_to_exit));
 
 			builder.setTitle(getString(R.string.system_prompt));
 
@@ -85,7 +84,7 @@ public class WojiaSettingActivity extends BaseActivity implements
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							dialog.dismiss();
-							new InitExitUtil(WojiaSettingActivity.this)
+							new InitExitUtil(ISettingActivity.this)
 									.ExitSetting();
 							MyApplication.getInstance().exit();
 						}

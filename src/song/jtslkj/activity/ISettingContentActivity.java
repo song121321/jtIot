@@ -14,10 +14,10 @@ import android.widget.TextView;
 import com.jtslkj.R;
 
 import song.jtslkj.app.MyApplication;
-import song.jtslkj.fragment.WojiaSettingSafetyFragment;
-import song.jtslkj.fragment.WojiaSettingUniverseFragment;
+import song.jtslkj.fragment.ISettingSafetyFragment;
+import song.jtslkj.fragment.ISettingUniverseFragment;
 
-public class WojiaSettingContentActivity extends FragmentActivity {
+public class ISettingContentActivity extends FragmentActivity {
 	private TextView mTextView;
 	private ImageView iv_top_back;
 	private static Fragment[] fragments;
@@ -26,7 +26,7 @@ public class WojiaSettingContentActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_wojia_settingcontent);
+		setContentView(R.layout.activity_i_setting_content);
 		MyApplication.getInstance().addActivity(this);
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		String[] naviTexts = getResources().getStringArray(R.array.setting_arr);
@@ -57,8 +57,8 @@ public class WojiaSettingContentActivity extends FragmentActivity {
 	}
 
 	private void initFragmentArray() {
-		Fragment f0 = new WojiaSettingUniverseFragment();
-		Fragment f1 = new WojiaSettingSafetyFragment();
+		Fragment f0 = new ISettingUniverseFragment();
+		Fragment f1 = new ISettingSafetyFragment();
 		// Fragment f4 = new ISetting_ShareAccount();
 		// Fragment f5 = new ISetting_AboutUs();
 		// Fragment f6 = new ISetting_DeleteRestore();

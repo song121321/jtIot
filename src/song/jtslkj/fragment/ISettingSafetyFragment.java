@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.kyleduo.switchbutton.SwitchButton;
 
-public class WojiaSettingSafetyFragment extends Fragment {
+public class ISettingSafetyFragment extends Fragment {
 	private RelativeLayout rl_clearpass;
 	private SwitchButton sb_closepass;
 	private View v;
@@ -31,8 +31,8 @@ public class WojiaSettingSafetyFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		clearpassworddone = getActivity().getString(
-				R.string.wojia_setting_anquan_cleargesturelock_passworddone);
-		v = inflater.inflate(R.layout.fragment_wojia_setting_safety, null);
+				R.string.i_setting_safety_clear_gesture_lock_password_done);
+		v = inflater.inflate(R.layout.fragment_i_setting_safety, null);
 		rl_clearpass = (RelativeLayout) v
 				.findViewById(R.id.rl_wojia_setting_anquan);
 		sb_closepass = (SwitchButton) v
@@ -70,7 +70,7 @@ public class WojiaSettingSafetyFragment extends Fragment {
 
 				AlertDialog.Builder builder = new Builder(getActivity());
 				builder.setMessage(getActivity().getString(
-						R.string.wojia_setting_anquan_suretoclearglpass));
+						R.string.i_setting_safety_sure_to_clear_gesture_lock_passwd));
 
 				builder.setTitle(getActivity()
 						.getString(R.string.system_prompt));

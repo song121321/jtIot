@@ -71,7 +71,7 @@ public class DeviceActivity extends BaseActivity implements OnClickListener {
             case R.id.re_wojia_main_setting:
 
                 Intent intent = new Intent(DeviceActivity.this,
-                        WojiaSettingActivity.class);
+                        ISettingActivity.class);
                 startActivity(intent);
                 break;
         }

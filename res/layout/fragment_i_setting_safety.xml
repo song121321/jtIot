@@ -16,7 +16,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="25dp"
-            android:text="@string/wojia_setting_anquan_closegesturelock"
+            android:text="@string/i_setting_safety_close_gesture_lock"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
 
@@ -44,7 +44,7 @@
             android:layout_height="fill_parent"
             android:layout_marginLeft="35dp"
             android:gravity="center_vertical"
-            android:text="@string/wojia_setting_anquan_cleargesturelock"
+            android:text="@string/i_setting_safety_clear_gesture_lock"
             android:textColor="@android:color/black"
             android:textSize="15sp" />
     </RelativeLayout>
