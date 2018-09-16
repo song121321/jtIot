@@ -166,6 +166,9 @@
         <activity android:name="song.jtslkj.activity.DeviceStaActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             />
+        <activity android:name="song.jtslkj.activity.DeviceIraLogActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
 
         <service
             android:name="song.jtslkj.service.NotificationService"

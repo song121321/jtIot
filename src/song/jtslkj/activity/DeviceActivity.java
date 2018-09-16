@@ -61,7 +61,10 @@ public class DeviceActivity extends BaseActivity implements OnClickListener {
                         DeviceStaActivity.class);
                 startActivity(deviceStaIntent);
                 break;
-            case R.id.re_wojia_main_friendsquan:
+            case R.id.re_device_main_irrigation_log:
+                Intent deviceIraIntent = new Intent(DeviceActivity.this,
+                        DeviceIraLogActivity.class);
+                startActivity(deviceIraIntent);
                 break;
             case R.id.re_wojia_main_qianbao:
                 break;

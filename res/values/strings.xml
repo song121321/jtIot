@@ -197,6 +197,17 @@
     <string name="device_sta_year_net">%1$s年净统计值</string>
     <string name="device_sta_year_total">%1$s年累积统计值</string>
 
+    <string name="device_ira_log_update_time">日期时间 </string>
+    <string name="device_ira_log_position">监测点 </string>
+    <string name="device_ira_log_last_start_time">前次开始时间： </string>
+    <string name="device_ira_log_last_end_time">前次结束时间： </string>
+    <string name="device_ira_log_last_card_number">前次卡号： </string>
+    <string name="device_ira_log_last_elec">前次用电（kwh）： </string>
+    <string name="device_ira_log_last_water">前次用水（m^3）： </string>
+    <string name="device_ira_log_last_start_money">前次起始金额（元）： </string>
+    <string name="device_ira_log_last_end_money">前次剩余金额（元）： </string>
+    <string name="device_ira_log_last_consume_money">前次消费金额（元）： </string>
+
     <string name="gis_project_address">项目地址</string>
 
     <string name="i_water_right">水权</string>

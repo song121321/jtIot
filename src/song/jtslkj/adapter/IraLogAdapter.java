@@ -11,27 +11,27 @@ import com.jtslkj.R;
 
 import java.util.List;
 
-import song.jtslkj.bean.StaBean;
+import song.jtslkj.bean.IraLogBean;
 
-public class StaAdapter extends BaseAdapter {
+public class IraLogAdapter extends BaseAdapter {
 
     private Context context;
-    private List<StaBean> staBeanList;
+    private List<IraLogBean> iraLogBeanList;
 
-    public StaAdapter(Context context, List<StaBean> staBeanList) {
+    public IraLogAdapter(Context context, List<IraLogBean> iraLogBeanList) {
         this.context = context;
-        this.staBeanList = staBeanList;
+        this.iraLogBeanList = iraLogBeanList;
     }
 
 
     @Override
     public int getCount() {
-        return staBeanList.size();
+        return iraLogBeanList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return staBeanList.get(position);
+        return iraLogBeanList.get(position);
     }
 
     @Override
@@ -39,17 +39,18 @@ public class StaAdapter extends BaseAdapter {
         return 0;
     }
 
+    //here we reuse the layout of device_sta, not a mistake.
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = LayoutInflater.from(context).inflate(
                 R.layout.item_device_sta, null);
-        TextView name = (TextView) convertView
+        TextView checkPosition = (TextView) convertView
                 .findViewById(R.id.tv_item_sta_title);
-        TextView detail = (TextView) convertView
+        TextView updateTime = (TextView) convertView
                 .findViewById(R.id.tv_item_sta_detail);
-        StaBean staBean = staBeanList.get(position);
-        name.setText(staBean.getName());
-        detail.setText(staBean.getDescription());
+        IraLogBean iraLogBean = iraLogBeanList.get(position);
+        checkPosition.setText(iraLogBean.getPosition());
+        updateTime.setText(iraLogBean.getUpdateTime());
         return convertView;
     }
 }
