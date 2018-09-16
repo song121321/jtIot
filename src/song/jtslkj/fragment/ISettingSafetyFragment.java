@@ -1,13 +1,7 @@
 package song.jtslkj.fragment;
 
-import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-import song.jtslkj.util.LoginGesturePatternUtils;
-import com.jtslkj.R;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
-import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,95 +12,97 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.GravityEnum;
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.afollestad.materialdialogs.Theme;
+import com.jtslkj.R;
 import com.kyleduo.switchbutton.SwitchButton;
 
+import song.jtslkj.activity.ISettingContentActivity;
+import song.jtslkj.config.MyConfig;
+import song.jtslkj.util.AccountSharedPreferenceHelper;
+import song.jtslkj.util.LoginGesturePatternUtils;
+
 public class ISettingSafetyFragment extends Fragment {
-	private RelativeLayout rl_clearpass;
-	private SwitchButton sb_closepass;
-	private View v;
-	AccountSharedPreferenceHelper asph;
-	String clearpassworddone = "";
+    private RelativeLayout rl_clearpass;
+    private SwitchButton sb_closepass;
+    private View v;
+    AccountSharedPreferenceHelper asph;
+    String clearpassworddone = "";
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		clearpassworddone = getActivity().getString(
-				R.string.i_setting_safety_clear_gesture_lock_password_done);
-		v = inflater.inflate(R.layout.fragment_i_setting_safety, null);
-		rl_clearpass = (RelativeLayout) v
-				.findViewById(R.id.rl_wojia_setting_anquan);
-		sb_closepass = (SwitchButton) v
-				.findViewById(R.id.sb_wojia_setting_anquan);
-		asph = new AccountSharedPreferenceHelper(getActivity());
-		if (asph.readStringFromSharedpreference(
-				MyConfig.sharedpreference_tablecol_closegesturelock).trim()
-				.equals("")) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        clearpassworddone = getActivity().getString(
+                R.string.i_setting_safety_clear_gesture_lock_password_done);
+        v = inflater.inflate(R.layout.fragment_i_setting_safety, null);
+        rl_clearpass = (RelativeLayout) v
+                .findViewById(R.id.rl_wojia_setting_anquan);
+        sb_closepass = (SwitchButton) v
+                .findViewById(R.id.sb_wojia_setting_anquan);
+        asph = new AccountSharedPreferenceHelper(getActivity());
+        if (asph.readStringFromSharedpreference(
+                MyConfig.sharedpreference_tablecol_closegesturelock).trim()
+                .equals("")) {
 
-		} else {
-			sb_closepass.setChecked(true);
+        } else {
+            sb_closepass.setChecked(true);
 
-		}
-		sb_closepass.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+        }
+        sb_closepass.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
-			@Override
-			public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
-				if (arg1) {
-					asph.writeStringToSharedpreference(
-							MyConfig.sharedpreference_tablecol_closegesturelock,
-							"yes");
-				} else {
-					asph.writeStringToSharedpreference(
-							MyConfig.sharedpreference_tablecol_closegesturelock,
-							"");
+            @Override
+            public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
+                if (arg1) {
+                    asph.writeStringToSharedpreference(
+                            MyConfig.sharedpreference_tablecol_closegesturelock,
+                            "yes");
+                } else {
+                    asph.writeStringToSharedpreference(
+                            MyConfig.sharedpreference_tablecol_closegesturelock,
+                            "");
 
-				}
-			}
-		});
+                }
+            }
+        });
 
-		rl_clearpass.setOnClickListener(new OnClickListener() {
+        rl_clearpass.setOnClickListener(new OnClickListener() {
 
-			@Override
-			public void onClick(View arg0) {
+            @Override
+            public void onClick(View arg0) {
 
-				AlertDialog.Builder builder = new Builder(getActivity());
-				builder.setMessage(getActivity().getString(
-						R.string.i_setting_safety_sure_to_clear_gesture_lock_passwd));
+                final ISettingContentActivity iSettingContentActivity = (ISettingContentActivity) getActivity();
+                iSettingContentActivity.mBuilder = new MaterialDialog.Builder(iSettingContentActivity);
+                iSettingContentActivity.mBuilder.title(R.string.system_prompt);
+                iSettingContentActivity.mBuilder.content(R.string.i_setting_safety_sure_to_clear_gesture_lock_passwd);
+                iSettingContentActivity.mBuilder.positiveText(R.string.system_sure);
+                iSettingContentActivity.mBuilder.titleGravity(GravityEnum.CENTER);
+                iSettingContentActivity.mBuilder.buttonsGravity(GravityEnum.START);
+                iSettingContentActivity.mBuilder.negativeText(R.string.system_cancel);
+                iSettingContentActivity.mBuilder.theme(Theme.LIGHT);
+                iSettingContentActivity.mBuilder.cancelable(false);
+                iSettingContentActivity.mMaterialDialog = iSettingContentActivity.mBuilder.build();
+                iSettingContentActivity.mMaterialDialog.show();
+                iSettingContentActivity.mBuilder.onAny(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        if (which == DialogAction.POSITIVE) {
+                            LoginGesturePatternUtils lgp = new LoginGesturePatternUtils(
+                                    getActivity());
+                            lgp.clearLock();
+                            Toast.makeText(getActivity(),
+                                    clearpassworddone, Toast.LENGTH_SHORT)
+                                    .show();
 
-				builder.setTitle(getActivity()
-						.getString(R.string.system_prompt));
-
-				builder.setPositiveButton(
-						getActivity().getString(R.string.system_sure),
-						new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								dialog.dismiss();
-								LoginGesturePatternUtils lgp = new LoginGesturePatternUtils(
-										getActivity());
-								lgp.clearLock();
-								Toast.makeText(getActivity(),
-										clearpassworddone, Toast.LENGTH_SHORT)
-										.show();
-							}
-						});
-
-				builder.setNegativeButton(
-						getActivity().getString(R.string.system_cancel),
-						new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								dialog.dismiss();
-							}
-						});
-
-				builder.create().show();
-			}
-		});
-		return v;
-	}
+                        } else if (which == DialogAction.NEGATIVE) {
+                            iSettingContentActivity.mMaterialDialog.dismiss();
+                        }
+                    }
+                });
+            }
+        });
+        return v;
+    }
 
 }

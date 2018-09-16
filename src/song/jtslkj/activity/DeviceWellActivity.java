@@ -16,7 +16,6 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.jtslkj.R;
 
@@ -34,7 +33,7 @@ import song.jtslkj.bean.WellBean;
 import song.jtslkj.config.MyConfig;
 import song.jtslkj.util.ListUtils;
 import song.jtslkj.util.ListUtilsHook;
-import song.jtslkj.util.ParseTools;
+import song.jtslkj.util.ParseUtil;
 import song.jtslkj.util.StringUtil;
 import song.jtslkj.util.ToolBox;
 import song.jtslkj.util.WebServiceUtil;
@@ -100,9 +99,7 @@ public class DeviceWellActivity extends BaseActivity implements
         WellAdapter wellAdapter = new WellAdapter(DeviceWellActivity.this, wellBeanList);
         wellList.setAdapter(wellAdapter);
         closeLoadingDialog();
-        Toast.makeText(
-                DeviceWellActivity.this, wellBeanList.size()+" devices load successfully!", Toast.LENGTH_LONG)
-                .show();
+        showShortToast(wellBeanList.size()+" devices load successfully!");
 
     }
 
@@ -204,7 +201,7 @@ public class DeviceWellActivity extends BaseActivity implements
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            wellBeans = ParseTools.json2WellBeanList(result);
+            wellBeans = ParseUtil.json2WellBeanList(result);
             setAdapter(wellBeans);
         }
     }
@@ -291,8 +288,7 @@ public class DeviceWellActivity extends BaseActivity implements
 
     @Override
     public void onLoadMore() {
-        Toast.makeText(DeviceWellActivity.this, "loadmore",
-                Toast.LENGTH_SHORT).show();
+        showShortToast(getResources().getString(R.string.xlistview_footer_hint_normal));
         wellList.stopLoadMore();
     }
 

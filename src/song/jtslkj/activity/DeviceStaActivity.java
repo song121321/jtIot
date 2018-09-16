@@ -1,10 +1,8 @@
 package song.jtslkj.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -13,7 +11,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.GravityEnum;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
@@ -28,7 +25,7 @@ import song.jtslkj.adapter.StaAdapter;
 import song.jtslkj.app.MyApplication;
 import song.jtslkj.bean.StaBean;
 import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.ParseTools;
+import song.jtslkj.util.ParseUtil;
 import song.jtslkj.util.WebServiceUtil;
 
 public class DeviceStaActivity extends BaseActivity implements AdapterView.OnItemClickListener {
@@ -124,10 +121,6 @@ public class DeviceStaActivity extends BaseActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//        String text = chooseList.getItemAtPosition(position) + "";
-//        Toast.makeText(this, "position=" + position + "text=" + text,
-//                Toast.LENGTH_SHORT).show();
         Intent deviceStaIntent = new Intent(DeviceStaActivity.this,
                 DeviceStaTableActivity.class);
         startActivity(deviceStaIntent);
@@ -152,7 +145,7 @@ public class DeviceStaActivity extends BaseActivity implements AdapterView.OnIte
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            staBeans = ParseTools.json2StaBeanList(result);
+            staBeans = ParseUtil.json2StaBeanList(result);
             setAdapter(staBeans);
         }
     }

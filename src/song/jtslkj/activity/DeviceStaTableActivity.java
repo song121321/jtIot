@@ -21,7 +21,7 @@ import java.util.List;
 import song.jtslkj.app.MyApplication;
 import song.jtslkj.bean.StaDayNetBean;
 import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.ParseTools;
+import song.jtslkj.util.ParseUtil;
 import song.jtslkj.util.StringUtil;
 import song.jtslkj.util.WebServiceUtil;
 
@@ -82,7 +82,6 @@ public class DeviceStaTableActivity extends BaseActivity {
                                 CalendarViewDialog.getInstance().close();
                                 int monthInt = calendar.get(Calendar.MONTH) + 1;
                                 day = calendar.get(Calendar.YEAR) +"-"+( monthInt<10? "0"+monthInt:monthInt)+"-"+calendar.get(Calendar.DAY_OF_MONTH);
-                                Toast.makeText(DeviceStaTableActivity.this, "daySelect:"+day, Toast.LENGTH_SHORT).show();
                                 refresh();
                             }
 
@@ -135,7 +134,7 @@ public class DeviceStaTableActivity extends BaseActivity {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            tableDataList = ParseTools.json2StaDayNetBeanList(result);
+            tableDataList = ParseUtil.json2StaDayNetBeanList(result);
             drawData();
         }
     }

@@ -13,7 +13,7 @@ import song.jtslkj.bean.StaDayNetBean;
 import song.jtslkj.bean.WellAttrBean;
 import song.jtslkj.bean.WellBean;
 
-public class ParseTools {
+public class ParseUtil {
 
 
 	public static List<WellBean> json2WellBeanList(String json){

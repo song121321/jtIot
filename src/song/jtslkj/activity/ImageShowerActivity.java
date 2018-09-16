@@ -1,16 +1,17 @@
 package song.jtslkj.activity;
 
-import song.jtslkj.util.AsyncLoadImageUtil;
-import song.jtslkj.util.ImageLoadingDialog;
-import com.jtslkj.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
+import com.jtslkj.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+
+import song.jtslkj.util.AsyncLoadImageUtil;
+import song.jtslkj.util.ImageLoadingDialog;
 
 public class ImageShowerActivity extends Activity {
 	ImageView img;

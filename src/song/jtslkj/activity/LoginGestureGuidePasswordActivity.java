@@ -1,13 +1,15 @@
 package song.jtslkj.activity;
 
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.util.LoginGesturePatternUtils;
-import com.jtslkj.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.jtslkj.R;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.util.LoginGesturePatternUtils;
 
 public class LoginGestureGuidePasswordActivity extends Activity {
 	LoginGesturePatternUtils lgp;

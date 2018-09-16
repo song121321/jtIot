@@ -1,12 +1,5 @@
 package song.jtslkj.activity;
 
-import java.util.HashMap;
-
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-import song.jtslkj.util.WebServiceUtil;
-import com.jtslkj.R;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -15,7 +8,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.jtslkj.R;
+
+import java.util.HashMap;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.config.MyConfig;
+import song.jtslkj.util.AccountSharedPreferenceHelper;
 
 public class LoginActivity extends BaseActivity {
 	Button bt_login;
@@ -88,11 +88,8 @@ public class LoginActivity extends BaseActivity {
 			super.onPostExecute(result);
 			System.out.println("-----" + result);
 			if (!result.equals("") && result.equals("true")) {
-				Toast.makeText(
-						LoginActivity.this,
-						getResources().getString(
-								R.string.login_zhlogin_loginsuccess),
-						Toast.LENGTH_SHORT).show();
+				showShortToast(getResources().getString(
+						R.string.login_zhlogin_loginsuccess));
 				AccountSharedPreferenceHelper asph = new AccountSharedPreferenceHelper(
 						LoginActivity.this);
 				asph.writeStringToSharedpreference(

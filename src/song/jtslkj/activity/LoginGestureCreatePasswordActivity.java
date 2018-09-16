@@ -1,16 +1,5 @@
 package song.jtslkj.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.config.MyConfig;
-import song.jtslkj.ui.LoginGesturePatternView;
-import song.jtslkj.ui.LoginGesturePatternView.Cell;
-import song.jtslkj.ui.LoginGesturePatternView.DisplayMode;
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-import song.jtslkj.util.LoginGesturePatternUtils;
-import com.jtslkj.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +10,19 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.jtslkj.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.config.MyConfig;
+import song.jtslkj.ui.LoginGesturePatternView;
+import song.jtslkj.ui.LoginGesturePatternView.Cell;
+import song.jtslkj.ui.LoginGesturePatternView.DisplayMode;
+import song.jtslkj.util.AccountSharedPreferenceHelper;
+import song.jtslkj.util.LoginGesturePatternUtils;
 
 public class LoginGestureCreatePasswordActivity extends Activity implements
 		OnClickListener {
@@ -375,7 +377,7 @@ public class LoginGestureCreatePasswordActivity extends Activity implements
 				updateStage(Stage.Introduction);
 			} else if (mUiStage.leftMode == LeftButtonMode.Cancel) {
 				// They are canceling the entire wizard
-				Toast.makeText(LoginGestureCreatePasswordActivity.this, getString(R.string.gesture_pass_text), Toast.LENGTH_LONG).show();
+				showToast(getString(R.string.gesture_pass_text));
 				AccountSharedPreferenceHelper asph = new AccountSharedPreferenceHelper(this);
 				asph.writeStringToSharedpreference(MyConfig.sharedpreference_tablecol_closegesturelock, "yes");
 				Intent i = new Intent(this,MainActivity.class);

@@ -26,7 +26,7 @@ import java.util.Map;
 
 import song.jtslkj.bean.WellBean;
 import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.ParseTools;
+import song.jtslkj.util.ParseUtil;
 import song.jtslkj.util.WebServiceUtil;
 
 public class GisActivity extends BaseActivity implements MarkerOverlay.OnMarkerClickListener {
@@ -100,7 +100,7 @@ public class GisActivity extends BaseActivity implements MarkerOverlay.OnMarkerC
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            wellBeans = ParseTools.json2WellBeanList(result);
+            wellBeans = ParseUtil.json2WellBeanList(result);
             wellBeanMap = new HashMap<>();
             for (WellBean wellBean : wellBeans) {
                 wellBeanMap.put(wellBean.getWellName(), wellBean);

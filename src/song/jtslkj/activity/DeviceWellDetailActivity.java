@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-
 import com.jtslkj.R;
 
 import song.jtslkj.adapter.WellAttrAdapter;

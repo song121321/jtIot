@@ -1,9 +1,5 @@
 package song.jtslkj.activity;
 
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.util.InitExitUtil;
-
-import com.jtslkj.R;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
@@ -13,6 +9,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+
+import com.jtslkj.R;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.util.InitExitUtil;
 
 public class ISettingActivity extends BaseActivity implements
 		OnClickListener {

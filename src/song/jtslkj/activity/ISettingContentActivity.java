@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.jtslkj.R;
 
 import song.jtslkj.app.MyApplication;
@@ -22,6 +23,8 @@ public class ISettingContentActivity extends FragmentActivity {
 	private ImageView iv_top_back;
 	private static Fragment[] fragments;
 	private static FragmentTransaction transaction;
+	public MaterialDialog.Builder mBuilder;
+	public MaterialDialog mMaterialDialog;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

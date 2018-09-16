@@ -1,7 +1,5 @@
 package song.jtslkj.fragment;
 
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-import com.jtslkj.R;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
+import com.jtslkj.R;
 import com.kyleduo.switchbutton.SwitchButton;
+
+import song.jtslkj.util.AccountSharedPreferenceHelper;
 
 public class ISettingUniverseFragment extends Fragment {
 	private SwitchButton sb_savebudget;

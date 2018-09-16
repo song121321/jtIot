@@ -24,7 +24,7 @@ import song.jtslkj.adapter.IraLogAdapter;
 import song.jtslkj.app.MyApplication;
 import song.jtslkj.bean.IraLogBean;
 import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.ParseTools;
+import song.jtslkj.util.ParseUtil;
 import song.jtslkj.util.WebServiceUtil;
 
 public class DeviceIraLogActivity extends BaseActivity implements AdapterView.OnItemClickListener {
@@ -166,7 +166,7 @@ public class DeviceIraLogActivity extends BaseActivity implements AdapterView.On
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            iraLogBeans = ParseTools.json2IraLogBeanList(result);
+            iraLogBeans = ParseUtil.json2IraLogBeanList(result);
             setAdapter(iraLogBeans);
         }
     }

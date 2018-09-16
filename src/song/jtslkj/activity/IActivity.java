@@ -1,11 +1,5 @@
 package song.jtslkj.activity;
 
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-
-import com.jtslkj.R;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +7,12 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.jtslkj.R;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.config.MyConfig;
+import song.jtslkj.util.AccountSharedPreferenceHelper;
 
 public class IActivity extends BaseActivity implements OnClickListener {
     ImageView iv_top_left, iv_top_right, iv_photo, iv_sex;
