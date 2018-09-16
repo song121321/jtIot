@@ -53,9 +53,7 @@ public class IncomeAdapter extends BaseAdapter {
 		if (!time.equals("")) {
 			ArrayList<IncomeBean> sublist = new ArrayList<IncomeBean>();
 			for (IncomeBean bean : incomelist) {
-				if (bean.getTime().trim().startsWith(ToolBox.getYear())) {
 					sublist.add(bean);
-				}
 			}
 			incomelist = sublist;
 		}

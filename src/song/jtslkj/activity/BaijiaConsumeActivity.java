@@ -101,7 +101,7 @@ public class BaijiaConsumeActivity extends BaseActivity implements
 		consumelist.setPullRefreshEnable(true);
 		consumelist.setXListViewListener(this);
 		consumelist.setOnItemClickListener(this);
-		month = ToolBox.getcurrentmonth();
+		month = "";
 		type = "";
 		person = "";
 		sectionindex = 1;
@@ -546,7 +546,7 @@ public class BaijiaConsumeActivity extends BaseActivity implements
 	public void onRefresh() {
 		refresh();
 		consumelist.stopRefresh();
-		consumelist.setRefreshTime("上一次更新：" + ToolBox.getcurrentdatetime());
+		consumelist.setRefreshTime("上一次更新：");
 	}
 
 	@Override

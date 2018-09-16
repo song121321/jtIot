@@ -1,5 +1,9 @@
 package song.jtslkj.util;
 
+import android.annotation.SuppressLint;
+
+import java.text.SimpleDateFormat;
+
 import song.jtslkj.config.MyConfig;
 
 public class StringUtil {
@@ -17,6 +21,30 @@ public class StringUtil {
     }
 
     public static boolean isEmpty(String str) {
-        return str == null || str.trim().equals("");
+        return !notEmpty(str);
+    }
+
+    public static boolean notEmpty(String str) {
+        return str != null && !str.trim().equals("");
+    }
+
+    public static String getCurrentMonthStr() {
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM");
+        return sdf.format(new java.util.Date());
+    }
+
+    public static String getCurrentYearStr() {
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        return sdf.format(new java.util.Date());
+    }
+
+    public static String getCurrentDateStr() {
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(new java.util.Date());
+    }
+
+    public static String getCurrentDateTimeStr() {
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return sdf.format(new java.util.Date());
     }
 }

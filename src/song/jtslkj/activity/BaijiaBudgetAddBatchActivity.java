@@ -198,7 +198,7 @@ public class BaijiaBudgetAddBatchActivity extends BaseActivity implements
 		for (BudgetBatchBean bbb : bbblist) {
 			if (bbb.isIscheck()) {
 				String sstr = bbb.getName() + "$" + bbb.getMoney() + "$"
-						+ ToolBox.getcurrentmonth() + bbb.getName() + "预算";
+						 + bbb.getName() + "预算";
 				str = str + sstr + "^";
 			}
 		}

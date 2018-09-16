@@ -75,7 +75,7 @@ public class ChijiaWorkAddActivity extends BaseActivity implements
 		number = 1;
 		changge = 0;
 		zhongjia = 0;
-		time = ToolBox.getcurrentdatetime();
+		time = "";
 		person = getString(R.string.lisong);
 		et_changge.setText(changge+"");
 		tv_person.setText(person);

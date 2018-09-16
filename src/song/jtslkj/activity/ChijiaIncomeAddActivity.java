@@ -74,7 +74,7 @@ public class ChijiaIncomeAddActivity extends BaseActivity implements
 	}
 
 	private void initview() {
-		time = ToolBox.getcurrentdatetime();
+		time = "";
 		tv_time_temp.setText(time);
 		name = "";
 		money = "0";

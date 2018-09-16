@@ -135,7 +135,7 @@ public class BaijiaBudgetActivity extends BaseActivity implements
 	}
 
 	private void initdata() {
-		timestr = ToolBox.getcurrentmonth();
+		timestr = "";
 		data = new ArrayList<Map<String, Object>>();
 		Map<String, Object> item = new HashMap<String, Object>();
 		item.put("item", "预算");

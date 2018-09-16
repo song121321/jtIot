@@ -26,7 +26,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import song.jtslkj.adapter.SectionAdapter;
 import song.jtslkj.adapter.WellAdapter;
@@ -140,7 +139,7 @@ public class DeviceWellActivity extends BaseActivity implements
     private void refreshLocal() {
         showLoadingDialog();
         List<WellBean> wellBeansCopy = new ArrayList<>(wellBeans);
-        if (!StringUtil.isEmpty(currentVillage)) {
+        if (StringUtil.isEmpty(currentVillage)) {
             wellBeansCopy = ListUtils.filter(wellBeansCopy, new ListUtilsHook<WellBean>() {
                 @Override
                 public boolean keep(WellBean wb) {
@@ -158,7 +157,7 @@ public class DeviceWellActivity extends BaseActivity implements
             });
         }
 
-        if (!StringUtil.isEmpty(currentSort)) {
+        if (StringUtil.isEmpty(currentSort)) {
 
             Collections.sort(wellBeansCopy, new Comparator<WellBean>() {
 
@@ -301,7 +300,6 @@ public class DeviceWellActivity extends BaseActivity implements
     public void onRefresh() {
         refresh();
         wellList.stopRefresh();
-        wellList.setRefreshTime("上一次更新：" + ToolBox.getcurrentdatetime());
     }
 
     @Override

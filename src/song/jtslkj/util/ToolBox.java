@@ -175,30 +175,7 @@ public class ToolBox {
 
     }
 
-    public static String getcurrentmonth() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM");
-        String date = sdf.format(new java.util.Date());
-        return date;
-    }
 
-    public static String getYear() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-        String date = sdf.format(new java.util.Date());
-        return date;
-    }
-
-    public static String getcurrentdate() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        String date = sdf.format(new java.util.Date());
-        return date;
-
-    }
-
-    public static String getcurrentdatetime() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String date = sdf.format(new java.util.Date());
-        return date;
-    }
 
     public static String getPhotoFileName() {
         Date date = new Date(System.currentTimeMillis());

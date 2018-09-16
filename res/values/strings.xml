@@ -190,6 +190,12 @@
     <string name="device_main_sta">数据统计</string>
 
     <string name="device_well_detail_attr">机井信息</string>
+    <string name="device_sta_day_net">%1$s日净统计值</string>
+    <string name="device_sta_day_total">%1$s日累积统计值</string>
+    <string name="device_sta_month_net">%1$s月净统计值</string>
+    <string name="device_sta_month_total">%1$s月累积统计值</string>
+    <string name="device_sta_year_net">%1$s年净统计值</string>
+    <string name="device_sta_year_total">%1$s年累积统计值</string>
 
     <string name="gis_project_address">项目地址</string>
 

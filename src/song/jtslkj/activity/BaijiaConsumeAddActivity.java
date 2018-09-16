@@ -97,7 +97,7 @@ public class BaijiaConsumeAddActivity extends BaseActivity implements
 	private void initview() {
 		name = "";
 		money = "0";
-		time = ToolBox.getcurrentdatetime();
+		time ="";
 		budget = getString(R.string.baijia_add_budget_frute);
 		person = getString(R.string.baijia_add_person_public);
 		detail = getString(R.string.baijia_add_person_fromphone);
@@ -339,7 +339,6 @@ public class BaijiaConsumeAddActivity extends BaseActivity implements
 		@Override
 		protected ArrayList<String> doInBackground(Void... arg0) {
 			HashMap<String, String> params = new HashMap<String, String>();
-			params.put("time", ToolBox.getcurrentmonth());
 			String nameSpace = MyConfig.nameSpace;
 			String methodName = MyConfig.methodName_GetIntroduction;
 			String endPoint = MyConfig.endPoint;
