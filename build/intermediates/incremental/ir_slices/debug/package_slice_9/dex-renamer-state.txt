@@ -1,4 +1,0 @@
-#Sun Aug 12 16:02:04 CST 2018
-base.0=E\:\\AndroidStudioProjects\\jtIot\\build\\intermediates\\transforms\\dexMerger\\debug\\27
-path.0=classes.dex
-renamed.0=classes.dex

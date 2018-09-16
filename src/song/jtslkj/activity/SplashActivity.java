@@ -1,14 +1,16 @@
 package song.jtslkj.activity;
 
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-import song.jtslkj.util.InitExitUtil;
-import com.jtslkj.R;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
+
+import com.jtslkj.R;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.config.MyConfig;
+import song.jtslkj.util.AccountSharedPreferenceHelper;
+import song.jtslkj.util.InitExitUtil;
 
 /**
  * 闪屏页面

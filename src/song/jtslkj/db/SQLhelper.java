@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class SQLhelper extends SQLiteOpenHelper {
 
-	public static String DB_NAME = "LoveHoney.db";
+	public static String DB_NAME = "JTIOT.db";
 	public static int DB_VERSION = 1;
 
 	public SQLhelper(Context context, String name, CursorFactory factory,
@@ -21,23 +21,12 @@ public class SQLhelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// id 消费记录编号
-		// name 名称
-		// otype 隶属名字
-		// person 负责人
-		// money 金额
-		// otime 消费时间
-		// detail 消费详细记录
-
-		String sql = "CREATE  TABLE Consume (id INTEGER PRIMARY KEY , name VARCHAR, otype VARCHAR, "
+        //create table
+		String sql = "CREATE  TABLE table1 (id INTEGER PRIMARY KEY , name VARCHAR, otype VARCHAR, "
 				+ " person VARCHAR, money VARCHAR,otime VARCHAR, detail VARCHAR)";
 		db.execSQL(sql);
-		// id 预算id
-		// ischeck 是否选中
-		// name 预算名称
-		// money 预算金额
-		// isusual 是否常用
-		sql = "CREATE  TABLE BudgetBatch (id INTEGER PRIMARY KEY ,ischeck VARCHAR, name VARCHAR, money VARCHAR,isusual VARCHAR)";
+
+		sql = "CREATE  TABLE table2 (id INTEGER PRIMARY KEY ,ischeck VARCHAR, name VARCHAR, money VARCHAR,isusual VARCHAR)";
 		db.execSQL(sql);
 	}
 

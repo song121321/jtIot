@@ -24,7 +24,7 @@
             android:background="@drawable/search_bg"
             android:clickable="true"
             android:singleLine="true"
-            android:hint="@string/baijia_search_actionbar_searchhint" />
+            android:hint="@string/system_search" />
 
         <ImageButton
             android:id="@+id/bt_et_actionbar_search_searchbt"

@@ -1,8 +1,5 @@
 package song.jtslkj.adapter;
 
-import java.util.ArrayList;
-
-import com.jtslkj.R;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -12,20 +9,21 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jtslkj.R;
+
+import java.util.ArrayList;
+
 public class SectionAdapter extends BaseAdapter {
 
 	private Context context;
 	private ArrayList<String> itemList;
 	private String selectstr;
 
-	// private int secindex;
-
 	public SectionAdapter(Context context, ArrayList<String> item,
 			String selectstr) {
 		this.context = context;
 		this.itemList = item;
 		this.selectstr = selectstr;
-		// this.secindex = secindex;
 	}
 
 	@Override
@@ -69,10 +67,6 @@ public class SectionAdapter extends BaseAdapter {
 			data.mText.setTextColor(Color.BLACK);
 		}
 		return convertView;
-	}
-
-	public void freshdata() {
-		this.notifyDataSetChanged();
 	}
 
 	private class DataList {

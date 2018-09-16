@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_device_well"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_lefttitle" />
+
+    <ImageView
+        android:id="@+id/iv_device_well_detail_pic"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/online" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/text_balck"
+        android:text="@string/device_well_detail_attr"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ListView
+            android:id="@+id/lv_device_well_detail_attr"
+            android:divider="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

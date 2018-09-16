@@ -10,7 +10,6 @@ public class ImageLoadingDialog extends Dialog {
 
 	public ImageLoadingDialog(Context context) {
 		super(context, R.style.ImageloadingDialogStyle);
-		//setOwnerActivity((Activity) context);// ����dialogȫ����ʾ
 	}
 
 	private ImageLoadingDialog(Context context, int theme) {

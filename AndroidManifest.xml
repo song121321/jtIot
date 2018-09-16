@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jtslkj"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -10,24 +10,34 @@
 
     <permission
         android:name="oem.permission.SENDMAIL"
-        android:protectionLevel="normal" >
-    </permission>
+        android:protectionLevel="normal"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE">
+    </uses-permission>
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE">
+    </uses-permission>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Theme.AppCompat">
         <activity
             android:name="song.jtslkj.activity.SplashActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,140 +47,73 @@
         <activity
             android:name="song.jtslkj.activity.SplashBaseActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
             android:name="song.jtslkj.activity.LoginActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
             android:name="song.jtslkj.activity.MainActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
             android:name="song.jtslkj.activity.LoginGestureGuidePasswordActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
             android:name="song.jtslkj.activity.LoginGestureCreatePasswordActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
             android:name="song.jtslkj.activity.LoginGestureUnlockPasswordActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetAddSingleActivity"
+            android:name="song.jtslkj.activity.HomeActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetAddBatchActivity"
+            android:name="song.jtslkj.activity.ImgPreviewActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
-            android:name="song.jtslkj.activity.BaijiaBudgetDetailActivity"
+            android:name="song.jtslkj.activity.ISettingActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeActivity"
+            android:name="song.jtslkj.activity.IActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.HejiaActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.WojiaSettingContentActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.WojiaSettingActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.WojiaZujiActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.WojiaActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeAddActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeSearchActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeSearchResultActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.BaijiaConsumeDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaWorkAddActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaWorkDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaWorkSettleActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="song.jtslkj.activity.ChijiaIncomeAddActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar"/>
         <activity
             android:name="song.jtslkj.activity.ImageShowerActivity"
-            android:theme="@style/ImageScale" >
-        </activity>
+            android:theme="@style/ImageScale"/>
+        <activity
+            android:name="song.jtslkj.activity.ISettingContentActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name="song.jtslkj.activity.GisActivity"
+            android:label="@string/device_main_well"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="song.jtslkj.activity.DeviceActivity" />
+        <activity
+            android:name="song.jtslkj.activity.DeviceWellActivity"
+            android:label="@string/device_main_well"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="song.jtslkj.activity.DeviceWellDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="song.jtslkj.activity.DeviceStaTableActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+        <activity android:name="song.jtslkj.activity.DeviceStaActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+        <activity android:name="song.jtslkj.activity.DeviceIraLogActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
 
-        <service
-            android:name="song.jtslkj.service.NotificationService"
-            android:permission="oem.permission.SENDMAIL" >
-            <intent-filter>
-                <action android:name="XJK_SERVICE" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>

@@ -1,237 +1,213 @@
 package song.jtslkj.activity;
 
-import java.util.Date;
-
-import com.kyleduo.switchbutton.SwitchButton;
-
-import song.jtslkj.app.MyApplication;
-import song.jtslkj.config.MyConfig;
-import song.jtslkj.util.AccountSharedPreferenceHelper;
-import song.jtslkj.util.DialogUtil;
-import com.jtslkj.R;
-import android.app.AlertDialog;
 import android.app.TabActivity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.GravityEnum;
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.afollestad.materialdialogs.Theme;
+import com.jtslkj.R;
+
+import song.jtslkj.app.MyApplication;
+import song.jtslkj.util.AccountSharedPreferenceHelper;
+
 @SuppressWarnings("deprecation")
 public class MainActivity extends TabActivity {
-	private TabHost mTabHost;
-	private RadioGroup mTabButtonGroup;
-	public static final String TAB_BAIJIA = "baijia";
-	public static final String TAB_CHIJIA = "chijia";
-	public static final String TAB_HEJIA = "hejia";
-	public static final String TAB_WOJIA = "wojia";
-	public static final String ACTION_TAB = "tabaction";
-	private RadioButton rButton1, rButton2, rButton3, rButton4;
-	public static boolean isForeground = false;
-	AccountSharedPreferenceHelper asph;
-	SwitchButton sb_on;
+    private TabHost mTabHost;
+    private RadioGroup mTabButtonGroup;
+    public static final String TAB_HOME = "home";
+    public static final String TAB_GIS = "gis";
+    public static final String TAB_DEVICE = "device";
+    public static final String TAB_PERSON = "person";
+    private RadioButton rButtonHome, rButtonGis, rButtonFacility, rButtonI;
+    AccountSharedPreferenceHelper asph;
+    MaterialDialog.Builder mBuilder;
+    MaterialDialog mMaterialDialog;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		findViewById();
-		initView();
-		MyApplication.getInstance().addActivity(this);
-		IntentFilter intentFilter = new IntentFilter();
-		intentFilter.addAction(ACTION_TAB);
-		asph = new AccountSharedPreferenceHelper(this);
-		if (!asph
-				.readStringFromSharedpreference(
-						MyConfig.sharedpreference_tablecol_newson).trim()
-				.equals("")) {
-			registerReceiver(TabReceiver, intentFilter);
-			Intent intent = new Intent();
-			intent.setAction("XJK_SERVICE");
-			startService(intent);
-		}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        findViewById();
+        initView();
+        MyApplication.getInstance().addActivity(this);
 
-	}
 
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
+    }
 
-	}
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        super.onResume();
 
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
+    }
 
-	}
+    @Override
+    protected void onPause() {
+        // TODO Auto-generated method stub
+        super.onPause();
 
-	private void findViewById() {
-		mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
-		rButton1 = (RadioButton) findViewById(R.id.home_tab_baijia);
-		rButton2 = (RadioButton) findViewById(R.id.home_tab_chijia);
-		rButton3 = (RadioButton) findViewById(R.id.home_tab_hejia);
-		rButton4 = (RadioButton) findViewById(R.id.home_tab_wojia);
-	}
+    }
 
-	private void initView() {
+    private void findViewById() {
+        mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
+        rButtonHome = (RadioButton) findViewById(R.id.home_tab_home);
+        rButtonGis = (RadioButton) findViewById(R.id.home_tab_gis);
+        rButtonFacility = (RadioButton) findViewById(R.id.home_tab_facility);
+        rButtonI = (RadioButton) findViewById(R.id.home_tab_i);
+    }
 
-		mTabHost = getTabHost();
+    private void initView() {
 
-		Intent i_baijia = new Intent(this, BaijiaConsumeActivity.class);
-		Intent i_chijia = new Intent(this, ChijiaActivity.class);
-		Intent i_hejia = new Intent(this, HejiaActivity.class);
-		Intent i_wojia = new Intent(this, WojiaActivity.class);
+        mTabHost = getTabHost();
 
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_BAIJIA)
-				.setIndicator(TAB_BAIJIA).setContent(i_baijia));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_CHIJIA)
-				.setIndicator(TAB_CHIJIA).setContent(i_chijia));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_HEJIA).setIndicator(TAB_HEJIA)
-				.setContent(i_hejia));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_WOJIA).setIndicator(TAB_WOJIA)
-				.setContent(i_wojia));
-		mTabButtonGroup
-				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-					public void onCheckedChanged(RadioGroup group, int checkedId) {
-						switch (checkedId) {
-						case R.id.home_tab_baijia:
-							mTabHost.setCurrentTabByTag(TAB_BAIJIA);
-							changeTextColor(1);
-							break;
-						case R.id.home_tab_chijia:
-							mTabHost.setCurrentTabByTag(TAB_CHIJIA);
-							changeTextColor(2);
-							break;
-						case R.id.home_tab_hejia:
-							mTabHost.setCurrentTabByTag(TAB_HEJIA);
-							changeTextColor(3);
-							break;
+        Intent iHome = new Intent(this, HomeActivity.class);
+        Intent iGis = new Intent(this, GisActivity.class);
+        Intent iDevice = new Intent(this, DeviceActivity.class);
+        Intent i_wojia = new Intent(this, IActivity.class);
 
-						case R.id.home_tab_wojia:
-							mTabHost.setCurrentTabByTag(TAB_WOJIA);
-							changeTextColor(4);
-							break;
-						default:
-							break;
-						}
-					}
-				});
-	}
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_HOME)
+                .setIndicator(TAB_HOME).setContent(iHome));
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_GIS)
+                .setIndicator(TAB_GIS).setContent(iGis));
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_DEVICE).setIndicator(TAB_DEVICE)
+                .setContent(iDevice));
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSON).setIndicator(TAB_PERSON)
+                .setContent(i_wojia));
+        mTabButtonGroup
+                .setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        switch (checkedId) {
+                            case R.id.home_tab_home:
+                                mTabHost.setCurrentTabByTag(TAB_HOME);
+                                changeTextColor(1);
+                                break;
+                            case R.id.home_tab_gis:
+                                mTabHost.setCurrentTabByTag(TAB_GIS);
+                                changeTextColor(2);
+                                break;
+                            case R.id.home_tab_facility:
+                                mTabHost.setCurrentTabByTag(TAB_DEVICE);
+                                changeTextColor(3);
+                                break;
 
-	private void changeTextColor(int index) {
-		switch (index) {
-		case 1:
-			rButton1.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
-			rButton2.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton3.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton4.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			break;
-		case 2:
-			rButton1.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton2.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
-			rButton3.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton4.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			break;
-		case 3:
-			rButton1.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton2.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton3.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
-			rButton4.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			break;
+                            case R.id.home_tab_i:
+                                mTabHost.setCurrentTabByTag(TAB_PERSON);
+                                changeTextColor(4);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                });
+    }
 
-		case 4:
-			rButton1.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton2.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton3.setTextColor(getResources().getColor(
-					R.color.main_textcolor_normal));
-			rButton4.setTextColor(getResources().getColor(
-					R.color.main_textcolor_select));
-			break;
+    private void changeTextColor(int index) {
+        switch (index) {
+            case 1:
+                rButtonHome.setTextColor(getResources().getColor(
+                        R.color.actionbar_bg));
+                rButtonGis.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonFacility.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonI.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                break;
+            case 2:
+                rButtonHome.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonGis.setTextColor(getResources().getColor(
+                        R.color.actionbar_bg));
+                rButtonFacility.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonI.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                break;
+            case 3:
+                rButtonHome.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonGis.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonFacility.setTextColor(getResources().getColor(
+                        R.color.actionbar_bg));
+                rButtonI.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                break;
 
-		default:
-			break;
-		}
-	}
+            case 4:
+                rButtonHome.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonGis.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonFacility.setTextColor(getResources().getColor(
+                        R.color.main_textcolor_normal));
+                rButtonI.setTextColor(getResources().getColor(
+                        R.color.actionbar_bg));
+                break;
 
-	/** 含有标题、内容、两个按钮的对话框 **/
-	protected void showAlertDialog(String title, String message,
-			String positiveText,
-			DialogInterface.OnClickListener onPositiveClickListener,
-			String negativeText,
-			DialogInterface.OnClickListener onNegativeClickListener) {
-		new AlertDialog.Builder(this).setTitle(title).setMessage(message)
-				.setPositiveButton(positiveText, onPositiveClickListener)
-				.setNegativeButton(negativeText, onNegativeClickListener)
-				.show();
-	}
+            default:
+                break;
+        }
+    }
 
-	@Override
-	public boolean dispatchKeyEvent(KeyEvent event) {
-		if (event.getKeyCode() == KeyEvent.KEYCODE_BACK
-				&& event.getAction() == KeyEvent.ACTION_DOWN
-				&& event.getRepeatCount() == 0) {
-			// 具体的操作代码
-			Log.e("hjq", "onBackPressed");
-			DialogUtil.showNoTitleDialog(MainActivity.this,
-					R.string.system_sureifexit, R.string.system_sure,
-					R.string.system_cancel, new OnClickListener() {
 
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							// TODO Auto-generated method stub
-							MyApplication.getInstance().exit();
-						}
-					}, new OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							// TODO Auto-generated method stub
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK
+                && event.getAction() == KeyEvent.ACTION_DOWN
+                && event.getRepeatCount() == 0) {
+            mBuilder = new MaterialDialog.Builder(MainActivity.this);
+            mBuilder.title(R.string.system_prompt);
+            mBuilder.content(R.string.system_sureifexit);
+            mBuilder.positiveText(R.string.system_sure);
+            mBuilder.titleGravity(GravityEnum.CENTER);
+            mBuilder.buttonsGravity(GravityEnum.START);
+            mBuilder.negativeText(R.string.system_cancel);
+            mBuilder.theme(Theme.LIGHT);
+            mBuilder.cancelable(false);
+            mMaterialDialog = mBuilder.build();
+            mMaterialDialog.show();
+            mBuilder.onAny(new MaterialDialog.SingleButtonCallback() {
+                @Override
+                public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                    if (which == DialogAction.POSITIVE) {
+                        MyApplication.getInstance().exit();
+                    } else if (which == DialogAction.NEGATIVE) {
+                        mMaterialDialog.dismiss();
+                    }
+                }
+            });
+        }
 
-						}
-					}, true);
-		}
-		return super.dispatchKeyEvent(event);
-	}
+        return super.dispatchKeyEvent(event);
+    }
 
-	@Override
-	protected void onDestroy() {
-		// TODO Auto-generated method stub
-		super.onDestroy();
-		MyApplication.getInstance().removeActivity(this);
-		//unregisterReceiver(TabReceiver);
-	}
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+        super.onDestroy();
+        MyApplication.getInstance().removeActivity(this);
+        //unregisterReceiver(TabReceiver);
+    }
 
-	BroadcastReceiver TabReceiver = new BroadcastReceiver() {
+    BroadcastReceiver TabReceiver = new BroadcastReceiver() {
 
-		@Override
-		public void onReceive(Context context, Intent intent) {
-			// TODO Auto-generated method stub
-			// MyApplication.getInstance().type=2;
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // TODO Auto-generated method stub
+            // MyApplication.getInstance().type=2;
 
-		}
-	};
+        }
+    };
 }
