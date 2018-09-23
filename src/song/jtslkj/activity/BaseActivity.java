@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Toast;
 
 import com.fingerth.supdialogutils.SYSDiaLogUtils;
+import com.jtslkj.R;
 
 import song.jtslkj.app.MyApplication;
 
@@ -35,7 +36,7 @@ public class BaseActivity extends Activity implements OnClickListener {
     }
 
     public void showLoadingDialog() {
-        SYSDiaLogUtils.showProgressDialog(this, SYSDiaLogUtils.SYSDiaLogType.IosType, "加載中...", true, new DialogInterface.OnCancelListener() {
+        SYSDiaLogUtils.showProgressDialog(this, SYSDiaLogUtils.SYSDiaLogType.IosType, getString(R.string.xlistview_header_hint_loading), true, new DialogInterface.OnCancelListener() {
             @Override
             public void onCancel(DialogInterface dialog) {
 
