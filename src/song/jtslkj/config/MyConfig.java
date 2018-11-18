@@ -2,7 +2,6 @@ package song.jtslkj.config;
 
 public class MyConfig {
 	public static String Bmob_APPID = "e9bbe5f23a1aa1d60d525871e1d7db99";// bmob
-																			// sdk��APPID
 	public static String appname = "金田物联v2.0";
 	public static String ServerAddress = "http://ydinfo.gearhostpreview.com/";
 	public static String picServer = "http://wlw.jtslkj.cn:8021";

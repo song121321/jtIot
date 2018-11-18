@@ -22,7 +22,6 @@ public class BaseActivity extends Activity implements OnClickListener {
 
     @Override
     protected void onDestroy() {
-        // TODO Auto-generated method stub
         super.onDestroy();
         MyApplication.getInstance().removeActivity(this);
     }
