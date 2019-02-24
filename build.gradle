@@ -24,9 +24,10 @@ dependencies {
     implementation 'com.github.huangyanbin:SmartTable:2.1.3'
     implementation 'com.github.fingerth:FingerthAndroidUtils:1.0.3'
     implementation 'com.github.huangdali:DatepickerDialog:v1.0.7'
-    api("com.afollestad.material-dialogs:core:0.9.5.0") {
+    api('com.afollestad.material-dialogs:core:0.9.5.0') {
         exclude group: 'com.android.support'
     }
+    implementation files('libs/tiandituapi3.0.jar')
 }
 
 allprojects {
@@ -43,7 +44,7 @@ android {
     defaultConfig {
         applicationId "com.jtslkj.jtiot"
         minSdkVersion 20
-        targetSdkVersion 25
+        targetSdkVersion 19
         versionCode 2
         versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

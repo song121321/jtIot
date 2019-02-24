@@ -32,6 +32,9 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat">
+        <meta-data
+            android:name="com.tianditu.apikey"
+            android:value="6f40264e45e0dfc11b5596a0358d9ed7" />
         <activity
             android:name="song.jtslkj.activity.SplashActivity"
             android:label="@string/app_name"
